@@ -31,9 +31,10 @@ A utility function is also provided to define loaded mods in the nix way:
 
   outputs = { self, minecraft, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system: {
-      packages.minecraft-with-ae2 = (minecraft.v1_18_1.fabric.client.withMods [
+      packages.minecraft-with-ae2 = (minecraft.legacyPackages.${system}.v1_18_1.fabric.client.withMods [
         (builtins.fetchurl {
-          name = "fabric-api";
+          # file name must have a ".jar" suffix to be loaded by fabric
+          name = "fabric-api.jar";
           url =
             "https://media.forgecdn.net/files/3609/610/fabric-api-0.46.1%2B1.18.jar";
           sha256 =
