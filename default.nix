@@ -156,10 +156,13 @@ let
       mainClass = loader.mainClass.client;
       arguments = buildArguments versionInfo assetsIndex;
     in launchScript {
-      inherit mainClass;
-      inherit versionInfo;
+      inherit mainClass versionInfo mods;
       inherit (arguments) assets nativeLibraries;
       javaLibraries = arguments.javaLibraries ++ extraJavaLibraries;
+    } // {
+      withMods = extraMods:
+        buildFabricClient versionInfo assetsIndex fabricProfile
+        (mods ++ extraMods);
     };
 
   buildMc = versionInfo: assetsIndex: fabricProfile:
