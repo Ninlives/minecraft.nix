@@ -2,10 +2,11 @@
 with lib;
 let
   inherit (pkgs)
-    fetchurl libpulseaudio libGL flite alsa-lib unzip writeShellScriptBin jq jre
+    fetchurl libpulseaudio libGL flite alsa-lib unzip writeShellScript jq jre
     runCommand;
   inherit (pkgs.xorg) libXcursor libXrandr libXxf86vm;
   inherit (pkgs.writers) writePython3;
+  inherit (import ./launcher.nix { inherit pkgs lib; }) launchWrapper;
   manifests = importJSON ./vanilla/manifests.json;
   fabricProfiles = importJSON ./fabric/profiles.json;
   fabricLibraries = importJSON ./fabric/libraries.json;
@@ -46,21 +47,28 @@ let
     ${builtins.readFile ./auth/login.py}
   '';
 
-  launchScript = { mainClass, versionInfo, javaLibraries, nativeLibraries
+  mkLaunchScript = { mainClass, versionInfo, javaLibraries, nativeLibraries
     , assets, mods ? [ ] }:
     let json = "${jq}/bin/jq --raw-output";
-    in writeShellScriptBin "minecraft" ''
+    in writeShellScript "minecraft" ''
       RED='\033[0;31m'
       FIN='\033[0m'
       PROFILE="$HOME/.local/share/minecraft.nix/profile.json"
-      for((i=1;i<=$#;i++)); do
-        if [[ "''${!i}" == "--mcnix-profile" && $i -lt $# ]];then
-          p=$((i+1))
-          PROFILE=''${!p}
-          break
+
+      mcargs=()
+      while [[ "$#" -gt 0 ]];do
+        if [[ "$1" == "--launch-profile" ]];then
+          shift 1
+          if [[ "$#" -gt 0 ]];then
+            PROFILE="$1"
+          fi
+        else
+          mcargs+=("$1")
         fi
+        shift 1
       done
-      ${auth} --profile "$PROFILE" || (echo -e "''${RED}Refused to launch game.''${FIN}"; exit 1)
+
+      ${auth} --profile "$PROFILE" || { echo -e "''${RED}Refused to launch game.''${FIN}"; exit 1; }
       UUID=$(${json} '.["id"]' "$PROFILE")
       USER_NAME=$(${json} '.["name"]' "$PROFILE")
       ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
@@ -81,7 +89,7 @@ let
         --assetIndex "${versionInfo.assets}" \
         --uuid "$UUID" \
         --accessToken "$ACCESS_TOKEN" \
-        "$@"
+        "''${mcargs[@]}"
     '';
 
   buildVanillaLibraries = artifacts:
@@ -140,38 +148,50 @@ let
       assets = buildAssets versionInfo assetsIndex;
     };
 
-  buildVanillaClient = versionInfo: assetsIndex:
-    launchScript (buildArguments versionInfo assetsIndex // {
+  buildVanillaClient = versionInfo: assetsIndex: resourcePacks:
+    mkLaunchScript (buildArguments versionInfo assetsIndex // {
       inherit versionInfo;
       inherit (versionInfo) mainClass;
     });
 
   buildFabricClient = versionInfo: assetsIndex: fabricProfile: mods:
     let
-      vanilla = buildVanillaClient versionInfo assetsIndex;
       loaderVersion = fabricProfile.loader;
       loader = fabricLoaders.${loaderVersion};
       extraJavaLibraries = buildFabricLibraries
         (fabricProfile.libraries.client ++ loader.libraries);
       mainClass = loader.mainClass.client;
       arguments = buildArguments versionInfo assetsIndex;
-    in launchScript {
+    in mkLaunchScript {
       inherit mainClass versionInfo mods;
       inherit (arguments) assets nativeLibraries;
       javaLibraries = arguments.javaLibraries ++ extraJavaLibraries;
-    } // {
-      withMods = extraMods:
-        buildFabricClient versionInfo assetsIndex fabricProfile
-        (mods ++ extraMods);
     };
 
   buildMc = versionInfo: assetsIndex: fabricProfile:
     let
-      fabric = {
-        client = buildFabricClient versionInfo assetsIndex fabricProfile [ ];
-      };
+      buildVanillaLauncher = resourcePacks:
+        launchWrapper {
+          launchScript = buildVanillaClient versionInfo assetsIndex;
+          inherit resourcePacks;
+        } // {
+          withResourcePacks = extraResourcePacks:
+            buildLauncher script (resourcePacks ++ extraResourcePacks);
+        };
+      buildFabricLauncher = resourcePacks: mods:
+        launchWrapper {
+          launchScript =
+            buildFabricClient versionInfo assetsIndex fabricProfile mods;
+          inherit resourcePacks;
+        } // {
+          withResourcePacks = extraResourcePacks:
+            buildFabricLauncher (resourcePacks ++ extraResourcePacks) mods;
+          withMods = extraMods:
+            buildFabricLauncher resourcePacks (mods ++ extraMods);
+        };
+      fabric = { client = buildFabricLauncher [ ] [ ]; };
     in {
-      vanilla.client = buildVanillaClient versionInfo assetsIndex;
+      vanilla.client = buildVanillaLauncher [ ];
     } // (optionalAttrs (fabricProfile != null) { inherit fabric; });
 
   prepareMc = gameVersion: assets:
