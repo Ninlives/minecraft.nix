@@ -12,7 +12,7 @@ let
   fabricLibraries = importJSON ./fabric/libraries.json;
   fabricLoaders = importJSON ./fabric/loaders.json;
 
-  libPath = makeLibraryPath [
+  preloadLibraries = [
     libpulseaudio
     libXcursor
     libXrandr
@@ -37,60 +37,6 @@ let
       inherit url;
       ${hash.type} = hash.value;
     };
-
-  auth = writePython3 "checkAuth" {
-    libraries = with pkgs.python3Packages; [ requests pyjwt colorama ];
-    flakeIgnore = [ "E501" "E402" "W391" ];
-  } ''
-    ${builtins.replaceStrings [ "@CLIENT_ID@" ] [ clientID ]
-    (builtins.readFile ./auth/msa.py)}
-    ${builtins.readFile ./auth/login.py}
-  '';
-
-  mkLaunchScript = { mainClass, versionInfo, javaLibraries, nativeLibraries
-    , assets, mods ? [ ] }:
-    let json = "${jq}/bin/jq --raw-output";
-    in writeShellScript "minecraft" ''
-      RED='\033[0;31m'
-      FIN='\033[0m'
-      PROFILE="$HOME/.local/share/minecraft.nix/profile.json"
-
-      mcargs=()
-      while [[ "$#" -gt 0 ]];do
-        if [[ "$1" == "--launch-profile" ]];then
-          shift 1
-          if [[ "$#" -gt 0 ]];then
-            PROFILE="$1"
-          fi
-        else
-          mcargs+=("$1")
-        fi
-        shift 1
-      done
-
-      ${auth} --profile "$PROFILE" || { echo -e "''${RED}Refused to launch game.''${FIN}"; exit 1; }
-      UUID=$(${json} '.["id"]' "$PROFILE")
-      USER_NAME=$(${json} '.["name"]' "$PROFILE")
-      ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
-
-      export LD_LIBRARY_PATH=${libPath}''${LD_LIBRARY_PATH:+':'}$LD_LIBRARY_PATH
-      exec ${jre}/bin/java \
-        -Djava.library.path='${
-          concatMapStringsSep ":" (native: "${native}/lib") nativeLibraries
-        }' \
-        -cp '${concatStringsSep ":" javaLibraries}' \
-        ${
-          optionalString (mods != [ ])
-          "-Dfabric.addMods='${concatStringsSep ":" mods}'"
-        } \
-        ${mainClass} \
-        --version "${versionInfo.id}" \
-        --assetsDir "${assets}" \
-        --assetIndex "${versionInfo.assets}" \
-        --uuid "$UUID" \
-        --accessToken "$ACCESS_TOKEN" \
-        "''${mcargs[@]}"
-    '';
 
   buildVanillaLibraries = artifacts:
     map (lib: fetchurl { inherit (lib.downloads.artifact) url sha1; })
@@ -125,7 +71,8 @@ let
           $out/indexes/${versionInfo.assets}.json
     '';
   buildFabricLibraries = libraries: map (lib: fetchJar lib) libraries;
-  buildArguments = versionInfo: assetsIndex:
+
+  buildBasicModule = versionInfo: assetsIndex:
     let
       client = fetchurl { inherit (versionInfo.downloads.client) url sha1; };
       isAllowed = artifact:
@@ -143,55 +90,55 @@ let
           true;
       artifacts = lib.filter isAllowed versionInfo.libraries;
     in {
-      javaLibraries = buildVanillaLibraries artifacts ++ [ client ];
-      nativeLibraries = buildNativeLibraries artifacts;
-      assets = buildAssets versionInfo assetsIndex;
+      inherit clientID;
+      version = versionInfo.id;
+      libraries.java = buildVanillaLibraries artifacts ++ [ client ];
+      libraries.native = buildNativeLibraries artifacts;
+      libraries.preload = preloadLibraries;
+      assets.directory = buildAssets versionInfo assetsIndex;
+      assets.index = versionInfo.assets;
     };
 
-  buildVanillaClient = versionInfo: assetsIndex: resourcePacks:
-    mkLaunchScript (buildArguments versionInfo assetsIndex // {
-      inherit versionInfo;
-      inherit (versionInfo) mainClass;
-    });
+  buildVanillaModules = versionInfo: assetsIndex: resourcePacks: [
+    (buildBasicModule versionInfo assetsIndex)
+    {
 
-  buildFabricClient = versionInfo: assetsIndex: fabricProfile: mods:
+      inherit (versionInfo) mainClass;
+    }
+  ];
+
+  buildFabricModules = versionInfo: assetsIndex: fabricProfile:
     let
       loaderVersion = fabricProfile.loader;
       loader = fabricLoaders.${loaderVersion};
       extraJavaLibraries = buildFabricLibraries
         (fabricProfile.libraries.client ++ loader.libraries);
-      mainClass = loader.mainClass.client;
-      arguments = buildArguments versionInfo assetsIndex;
-    in mkLaunchScript {
-      inherit mainClass versionInfo mods;
-      inherit (arguments) assets nativeLibraries;
-      javaLibraries = arguments.javaLibraries ++ extraJavaLibraries;
+    in [
+      (buildBasicModule versionInfo assetsIndex)
+      ({
+        libraries.java = extraJavaLibraries;
+        mainClass = loader.mainClass.client;
+      })
+    ];
+
+  mkLauncher = modules:
+    let
+      final = evalModules {
+        modules = modules
+          ++ [ ({ _module.args.pkgs = pkgs; }) (import ./module) ];
+      };
+    in final.config.launcher // {
+      withConfig = extraConfig: mkLauncher (modules ++ toList extraConfig);
     };
 
   buildMc = versionInfo: assetsIndex: fabricProfile:
     let
-      buildVanillaLauncher = resourcePacks:
-        launchWrapper {
-          launchScript = buildVanillaClient versionInfo assetsIndex;
-          inherit resourcePacks;
-        } // {
-          withResourcePacks = extraResourcePacks:
-            buildLauncher script (resourcePacks ++ extraResourcePacks);
-        };
-      buildFabricLauncher = resourcePacks: mods:
-        launchWrapper {
-          launchScript =
-            buildFabricClient versionInfo assetsIndex fabricProfile mods;
-          inherit resourcePacks;
-        } // {
-          withResourcePacks = extraResourcePacks:
-            buildFabricLauncher (resourcePacks ++ extraResourcePacks) mods;
-          withMods = extraMods:
-            buildFabricLauncher resourcePacks (mods ++ extraMods);
-        };
-      fabric = { client = buildFabricLauncher [ ] [ ]; };
+      fabric = {
+        client =
+          mkLauncher (buildFabricModules versionInfo assetsIndex fabricProfile);
+      };
     in {
-      vanilla.client = buildVanillaLauncher [ ];
+      vanilla.client = mkLauncher (buildVanillaModules versionInfo assetsIndex);
     } // (optionalAttrs (fabricProfile != null) { inherit fabric; });
 
   prepareMc = gameVersion: assets:
