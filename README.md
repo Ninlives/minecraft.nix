@@ -60,11 +60,6 @@ You may use the `withConfig` function to add extra configurations to the game:
 }
 ```
 
-A utility function is also provided to define loaded mods in the nix way:
-
-```nix
-```
-
 # TODO
 
 - [ ] Configure Minecraft and mods in nix
