@@ -99,7 +99,7 @@ let
       assets.index = versionInfo.assets;
     };
 
-  buildVanillaModules = versionInfo: assetsIndex: resourcePacks: [
+  buildVanillaModules = versionInfo: assetsIndex: [
     (buildBasicModule versionInfo assetsIndex)
     {
 
