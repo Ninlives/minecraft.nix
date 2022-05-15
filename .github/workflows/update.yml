@@ -1,0 +1,31 @@
+name: "Update dependencies and sources"
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        # Nix Flakes doesn't work on shallow clones
+        fetch-depth: 0
+    - name: Install nixFlake
+      uses: cachix/install-nix-action@v12
+      with:
+        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220513_bf89cd9/install
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+    - name: Configure git
+      run: |
+        git config --global user.name 'Automation - Ninlives'
+        git config --global user.email 'wqseleven@gmail.com'
+    - name: Update
+      run: nix run .#update
+    - name: Commit
+      run: |
+        git diff-index --quiet HEAD \
+        || (git commit -am "Update profiles - Automated Commit" && git push)
