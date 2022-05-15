@@ -1,4 +1,4 @@
-name: "Update dependencies and sources"
+name: "Update profiles"
 on:
   schedule:
     - cron: '0 0 * * *'
