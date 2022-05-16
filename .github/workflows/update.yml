@@ -1,4 +1,4 @@
-name: "Update profiles"
+name: "Update manifest"
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -28,4 +28,4 @@ jobs:
     - name: Commit
       run: |
         git diff-index --quiet HEAD \
-        || (git commit -am "Update profiles - Automated Commit" && git push)
+        || (git commit -am "Update manifest - Automated Commit" && git push)
