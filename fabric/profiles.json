@@ -1,2543 +1,2543 @@
 {
-  "22w19a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w19a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w19a"
-      ]
-    }
-  },
-  "22w18a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w18a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w18a"
-      ]
-    }
-  },
-  "22w17a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w17a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w17a"
-      ]
-    }
-  },
-  "22w16b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w16b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w16b"
-      ]
-    }
-  },
-  "22w16a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w16a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w16a"
-      ]
-    }
-  },
-  "22w15a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w15a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w15a"
-      ]
-    }
-  },
-  "22w14a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w14a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w14a"
-      ]
-    }
-  },
-  "22w13oneblockatatime": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w13oneblockatatime"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w13oneblockatatime"
-      ]
-    }
-  },
-  "22w13a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w13a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w13a"
-      ]
-    }
-  },
-  "22w12a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w12a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w12a"
-      ]
-    }
-  },
-  "22w11a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w11a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w11a"
-      ]
-    }
-  },
-  "1.18.2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.2"
-      ]
-    }
-  },
-  "1.18.2-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.2-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.2-rc1"
-      ]
-    }
-  },
-  "1.18.2-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.2-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.2-pre3"
-      ]
-    }
-  },
-  "1.18.2-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.2-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.2-pre2"
-      ]
-    }
-  },
-  "1.18.2-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.2-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.2-pre1"
-      ]
-    }
-  },
-  "1.19_deep_dark_experimental_snapshot-1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.19_deep_dark_experimental_snapshot-1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.19_deep_dark_experimental_snapshot-1"
-      ]
-    }
-  },
-  "22w07a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w07a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w07a"
-      ]
-    }
-  },
-  "22w06a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w06a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w06a"
-      ]
-    }
-  },
-  "22w05a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w05a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w05a"
-      ]
-    }
-  },
-  "22w03a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:22w03a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:22w03a"
-      ]
-    }
-  },
-  "1.18.1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.1"
-      ]
-    }
-  },
-  "1.18.1-rc3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.1-rc3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.1-rc3"
-      ]
-    }
-  },
-  "1.18.1-rc2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.1-rc2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.1-rc2"
-      ]
-    }
-  },
-  "1.18.1-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.1-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.1-rc1"
-      ]
-    }
-  },
-  "1.18.1-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18.1-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18.1-pre1"
-      ]
-    }
-  },
-  "1.18": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18"
-      ]
-    }
-  },
-  "1.18-rc4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-rc4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-rc4"
-      ]
-    }
-  },
-  "1.18-rc3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-rc3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-rc3"
-      ]
-    }
-  },
-  "1.18-rc2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-rc2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-rc2"
-      ]
-    }
-  },
-  "1.18-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-rc1"
-      ]
-    }
-  },
-  "1.18-pre8": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre8"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre8"
-      ]
-    }
-  },
-  "1.18-pre7": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre7"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre7"
-      ]
-    }
-  },
-  "1.18-pre6": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre6"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre6"
-      ]
-    }
-  },
-  "1.18-pre5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre5"
-      ]
-    }
-  },
-  "1.18-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre4"
-      ]
-    }
-  },
-  "1.18-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre3"
-      ]
-    }
-  },
-  "1.18-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre2"
-      ]
-    }
-  },
-  "1.18-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18-pre1"
-      ]
-    }
-  },
-  "21w44a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w44a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w44a"
-      ]
-    }
-  },
-  "21w43a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w43a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w43a"
-      ]
-    }
-  },
-  "21w42a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w42a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w42a"
-      ]
-    }
-  },
-  "21w41a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w41a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w41a"
-      ]
-    }
-  },
-  "21w40a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w40a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w40a"
-      ]
-    }
-  },
-  "21w39a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w39a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w39a"
-      ]
-    }
-  },
-  "21w38a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w38a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w38a"
-      ]
-    }
-  },
-  "21w37a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w37a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w37a"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-7": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-7"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-7"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-6": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-6"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-6"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-5"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-4"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-3"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-2"
-      ]
-    }
-  },
-  "1.18_experimental-snapshot-1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.18_experimental-snapshot-1"
-      ]
-    }
-  },
-  "1.17.1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1"
-      ]
-    }
-  },
-  "1.17.1-rc2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1-rc2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1-rc2"
-      ]
-    }
-  },
-  "1.17.1-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1-rc1"
-      ]
-    }
-  },
-  "1.17.1-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1-pre3"
-      ]
-    }
-  },
-  "1.17.1-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1-pre2"
-      ]
-    }
-  },
-  "1.17.1-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17.1-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17.1-pre1"
-      ]
-    }
-  },
-  "1.17": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17"
-      ]
-    }
-  },
-  "1.17-rc2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-rc2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-rc2"
-      ]
-    }
-  },
-  "1.17-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-rc1"
-      ]
-    }
-  },
-  "1.17-pre5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-pre5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-pre5"
-      ]
-    }
-  },
-  "1.17-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-pre4"
-      ]
-    }
-  },
-  "1.17-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-pre3"
-      ]
-    }
-  },
-  "1.17-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-pre2"
-      ]
-    }
-  },
-  "1.17-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.17-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.17-pre1"
-      ]
-    }
-  },
-  "21w20a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w20a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w20a"
-      ]
-    }
-  },
-  "21w19a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w19a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w19a"
-      ]
-    }
-  },
-  "21w18a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w18a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w18a"
-      ]
-    }
-  },
-  "21w17a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w17a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w17a"
-      ]
-    }
-  },
-  "21w16a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w16a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w16a"
-      ]
-    }
-  },
-  "21w15a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w15a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w15a"
-      ]
-    }
-  },
-  "21w14a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w14a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w14a"
-      ]
-    }
-  },
-  "21w13a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w13a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w13a"
-      ]
-    }
-  },
-  "21w11a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w11a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w11a"
-      ]
-    }
-  },
-  "21w10a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w10a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w10a"
-      ]
-    }
-  },
-  "21w08b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w08b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w08b"
-      ]
-    }
-  },
-  "21w08a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w08a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w08a"
-      ]
-    }
-  },
-  "21w07a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w07a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w07a"
-      ]
-    }
-  },
-  "21w06a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w06a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w06a"
-      ]
-    }
-  },
-  "21w05b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w05b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w05b"
-      ]
-    }
-  },
-  "21w05a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w05a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w05a"
-      ]
-    }
-  },
-  "21w03a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:21w03a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:21w03a"
-      ]
-    }
-  },
-  "1.16.5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.5"
-      ]
-    }
-  },
-  "1.16.5-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.5-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.5-rc1"
-      ]
-    }
-  },
-  "20w51a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w51a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w51a"
-      ]
-    }
-  },
-  "20w49a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w49a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w49a"
-      ]
-    }
-  },
-  "20w48a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w48a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w48a"
-      ]
-    }
-  },
-  "20w46a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w46a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w46a"
-      ]
-    }
-  },
-  "20w45a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w45a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w45a"
-      ]
-    }
-  },
-  "1.16.4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.4"
-      ]
-    }
-  },
-  "1.16.4-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.4-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.4-rc1"
-      ]
-    }
-  },
-  "1.16.4-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.4-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.4-pre2"
-      ]
-    }
-  },
-  "1.16.4-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.4-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.4-pre1"
-      ]
-    }
-  },
-  "1.16.3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.3"
-      ]
-    }
-  },
-  "1.16.3-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.3-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.3-rc1"
-      ]
-    }
-  },
-  "1.16_combat-3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16_combat-3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16_combat-3"
-      ]
-    }
-  },
-  "1.16.2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2"
-      ]
-    }
-  },
-  "1.16.2-rc2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2-rc2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2-rc2"
-      ]
-    }
-  },
-  "1.16.2-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2-rc1"
-      ]
-    }
-  },
-  "1.16.2-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2-pre3"
-      ]
-    }
-  },
-  "1.16.2-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2-pre2"
-      ]
-    }
-  },
-  "1.16.2-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.2-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.2-pre1"
-      ]
-    }
-  },
-  "20w30a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w30a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w30a"
-      ]
-    }
-  },
-  "20w29a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w29a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w29a"
-      ]
-    }
-  },
-  "20w28a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w28a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w28a"
-      ]
-    }
-  },
-  "20w27a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w27a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w27a"
-      ]
-    }
-  },
-  "1.16.1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16.1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16.1"
-      ]
-    }
-  },
-  "1.16": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16"
-      ]
-    }
-  },
-  "1.16-rc1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-rc1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-rc1"
-      ]
-    }
-  },
-  "1.16-pre8": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre8"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre8"
-      ]
-    }
-  },
-  "1.16-pre7": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre7"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre7"
-      ]
-    }
-  },
-  "1.16-pre6": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre6"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre6"
-      ]
-    }
-  },
-  "1.16-pre5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre5"
-      ]
-    }
-  },
-  "1.16-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre4"
-      ]
-    }
-  },
-  "1.16-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre3"
-      ]
-    }
-  },
-  "1.16-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre2"
-      ]
-    }
-  },
-  "1.16-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.16-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.16-pre1"
-      ]
-    }
-  },
-  "20w22a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w22a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w22a"
-      ]
-    }
-  },
-  "20w21a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w21a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w21a"
-      ]
-    }
-  },
-  "20w20b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w20b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w20b"
-      ]
-    }
-  },
-  "20w20a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w20a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w20a"
-      ]
-    }
-  },
-  "20w19a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w19a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w19a"
-      ]
-    }
-  },
-  "20w18a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w18a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w18a"
-      ]
-    }
-  },
-  "20w17a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w17a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w17a"
-      ]
-    }
-  },
-  "20w16a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w16a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w16a"
-      ]
-    }
-  },
-  "20w15a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w15a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w15a"
-      ]
-    }
-  },
-  "20w14a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w14a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w14a"
-      ]
-    }
-  },
-  "20w14infinite": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w14infinite"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w14infinite"
-      ]
-    }
-  },
-  "20w13b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w13b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w13b"
-      ]
-    }
-  },
-  "20w13a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w13a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w13a"
-      ]
-    }
-  },
-  "20w12a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w12a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w12a"
-      ]
-    }
-  },
-  "20w11a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w11a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w11a"
-      ]
-    }
-  },
-  "20w10a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w10a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w10a"
-      ]
-    }
-  },
-  "20w09a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w09a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w09a"
-      ]
-    }
-  },
-  "20w08a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w08a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w08a"
-      ]
-    }
-  },
-  "20w07a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w07a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w07a"
-      ]
-    }
-  },
-  "20w06a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:20w06a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:20w06a"
-      ]
-    }
-  },
-  "1.15.2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15.2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15.2"
-      ]
-    }
-  },
-  "1.15.2-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15.2-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15.2-pre2"
-      ]
-    }
-  },
-  "1.15.2-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15.2-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15.2-pre1"
-      ]
-    }
-  },
-  "1.15.1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15.1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15.1"
-      ]
-    }
-  },
-  "1.15.1-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15.1-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15.1-pre1"
-      ]
-    }
-  },
-  "1.15": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15"
-      ]
-    }
-  },
-  "1.15-pre7": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre7"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre7"
-      ]
-    }
-  },
-  "1.15-pre6": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre6"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre6"
-      ]
-    }
-  },
-  "1.15-pre5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre5"
-      ]
-    }
-  },
-  "1.15-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre4"
-      ]
-    }
-  },
-  "1.15_combat-1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15_combat-1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15_combat-1"
-      ]
-    }
-  },
-  "1.15-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre3"
-      ]
-    }
-  },
-  "1.15-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre2"
-      ]
-    }
-  },
-  "1.15-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.15-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.15-pre1"
-      ]
-    }
-  },
-  "19w46b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w46b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w46b"
-      ]
-    }
-  },
-  "19w46a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w46a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w46a"
-      ]
-    }
-  },
-  "19w45b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w45b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w45b"
-      ]
-    }
-  },
-  "19w45a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w45a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w45a"
-      ]
-    }
-  },
-  "1.14_combat-3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14_combat-3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14_combat-3"
-      ]
-    }
-  },
-  "19w44a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w44a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w44a"
-      ]
-    }
-  },
-  "19w42a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w42a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w42a"
-      ]
-    }
-  },
-  "19w41a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w41a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w41a"
-      ]
-    }
-  },
-  "19w40a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w40a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w40a"
-      ]
-    }
-  },
-  "19w39a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w39a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w39a"
-      ]
-    }
-  },
-  "19w38b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w38b"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w38b"
-      ]
-    }
-  },
-  "19w38a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w38a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w38a"
-      ]
-    }
-  },
-  "19w37a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w37a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w37a"
-      ]
-    }
-  },
-  "19w36a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w36a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w36a"
-      ]
-    }
-  },
-  "19w35a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w35a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w35a"
-      ]
-    }
-  },
-  "19w34a": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w34a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w34a"
-      ]
-    }
-  },
-  "1.14_combat-0": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14_combat-0"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14_combat-0"
-      ]
-    }
-  },
-  "1.14.4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4"
-      ]
-    }
-  },
-  "1.14.4-pre7": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre7"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre7"
-      ]
-    }
-  },
-  "1.14.4-pre6": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre6"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre6"
-      ]
-    }
-  },
-  "1.14.4-pre5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre5"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre5"
-      ]
-    }
-  },
-  "1.14.4-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre4"
-      ]
-    }
-  },
-  "1.14.4-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre3"
-      ]
-    }
-  },
-  "1.14.4-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre2"
-      ]
-    }
-  },
-  "1.14.4-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.4-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.4-pre1"
-      ]
-    }
-  },
-  "1.14.3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.3"
-      ]
-    }
-  },
-  "1.14_combat-212796": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14_combat-212796"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14_combat-212796"
-      ]
-    }
-  },
-  "1.14.3-pre4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.3-pre4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.3-pre4"
-      ]
-    }
-  },
-  "1.14.3-pre3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.3-pre3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.3-pre3"
-      ]
-    }
-  },
-  "1.14.3-pre2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.3-pre2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.3-pre2"
-      ]
-    }
-  },
-  "1.14.3-pre1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.3-pre1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.3-pre1"
-      ]
-    }
-  },
-  "1.14.2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.2"
-      ]
-    }
-  },
-  "1.14.2 Pre-Release 4": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 4"
-      ]
-    }
-  },
-  "1.14.2 Pre-Release 3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 3"
-      ]
-    }
-  },
-  "1.14.2 Pre-Release 2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 2"
-      ]
-    }
-  },
-  "1.14.2 Pre-Release 1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.2 Pre-Release 1"
-      ]
-    }
-  },
-  "1.14.1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.1"
-      ]
-    }
-  },
-  "1.14.1 Pre-Release 2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.1 Pre-Release 2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.1 Pre-Release 2"
-      ]
-    }
-  },
-  "1.14.1 Pre-Release 1": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14.1 Pre-Release 1"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14.1 Pre-Release 1"
-      ]
-    }
-  },
   "1.14": {
-    "loader": "0.14.5",
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14"
-      ],
       "client": [
         "net.fabricmc:intermediary:1.14"
-      ]
-    }
-  },
-  "1.14 Pre-Release 5": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 5"
       ],
-      "client": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 5"
-      ]
-    }
-  },
-  "1.14 Pre-Release 4": {
-    "loader": "0.14.5",
-    "libraries": {
       "server": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 4"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 4"
+        "net.fabricmc:intermediary:1.14"
       ]
-    }
-  },
-  "1.14 Pre-Release 3": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 3"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 3"
-      ]
-    }
-  },
-  "1.14 Pre-Release 2": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 2"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 2"
-      ]
-    }
+    },
+    "loader": "0.14.5"
   },
   "1.14 Pre-Release 1": {
-    "loader": "0.14.5",
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:1.14 Pre-Release 1"
-      ],
       "client": [
         "net.fabricmc:intermediary:1.14 Pre-Release 1"
-      ]
-    }
-  },
-  "19w14b": {
-    "loader": "0.14.5",
-    "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w14b"
       ],
-      "client": [
-        "net.fabricmc:intermediary:19w14b"
-      ]
-    }
-  },
-  "19w14a": {
-    "loader": "0.14.5",
-    "libraries": {
       "server": [
-        "net.fabricmc:intermediary:19w14a"
-      ],
-      "client": [
-        "net.fabricmc:intermediary:19w14a"
+        "net.fabricmc:intermediary:1.14 Pre-Release 1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "3D Shareware v1.34": {
-    "loader": "0.14.5",
+  "1.14 Pre-Release 2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:3D Shareware v1.34"
-      ],
       "client": [
-        "net.fabricmc:intermediary:3D Shareware v1.34"
+        "net.fabricmc:intermediary:1.14 Pre-Release 2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14 Pre-Release 2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w13b": {
-    "loader": "0.14.5",
+  "1.14 Pre-Release 3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w13b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w13b"
+        "net.fabricmc:intermediary:1.14 Pre-Release 3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14 Pre-Release 3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w13a": {
-    "loader": "0.14.5",
+  "1.14 Pre-Release 4": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w13a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w13a"
+        "net.fabricmc:intermediary:1.14 Pre-Release 4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14 Pre-Release 4"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w12b": {
-    "loader": "0.14.5",
+  "1.14 Pre-Release 5": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w12b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w12b"
+        "net.fabricmc:intermediary:1.14 Pre-Release 5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14 Pre-Release 5"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w12a": {
-    "loader": "0.14.5",
+  "1.14.1": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w12a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w12a"
+        "net.fabricmc:intermediary:1.14.1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w11b": {
-    "loader": "0.14.5",
+  "1.14.1 Pre-Release 1": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w11b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w11b"
+        "net.fabricmc:intermediary:1.14.1 Pre-Release 1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.1 Pre-Release 1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w11a": {
-    "loader": "0.14.5",
+  "1.14.1 Pre-Release 2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w11a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w11a"
+        "net.fabricmc:intermediary:1.14.1 Pre-Release 2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.1 Pre-Release 2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w09a": {
-    "loader": "0.14.5",
+  "1.14.2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w09a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w09a"
+        "net.fabricmc:intermediary:1.14.2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w08b": {
-    "loader": "0.14.5",
+  "1.14.2 Pre-Release 1": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w08b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w08b"
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w08a": {
-    "loader": "0.14.5",
+  "1.14.2 Pre-Release 2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w08a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w08a"
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w07a": {
-    "loader": "0.14.5",
+  "1.14.2 Pre-Release 3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w07a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w07a"
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w06a": {
-    "loader": "0.14.5",
+  "1.14.2 Pre-Release 4": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w06a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w06a"
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.2 Pre-Release 4"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w05a": {
-    "loader": "0.14.5",
+  "1.14.3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w05a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w05a"
+        "net.fabricmc:intermediary:1.14.3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w04b": {
-    "loader": "0.14.5",
+  "1.14.3-pre1": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w04b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w04b"
+        "net.fabricmc:intermediary:1.14.3-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.3-pre1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w04a": {
-    "loader": "0.14.5",
+  "1.14.3-pre2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w04a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w04a"
+        "net.fabricmc:intermediary:1.14.3-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.3-pre2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w03c": {
-    "loader": "0.14.5",
+  "1.14.3-pre3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w03c"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w03c"
+        "net.fabricmc:intermediary:1.14.3-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.3-pre3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w03b": {
-    "loader": "0.14.5",
+  "1.14.3-pre4": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w03b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w03b"
+        "net.fabricmc:intermediary:1.14.3-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.3-pre4"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w03a": {
-    "loader": "0.14.5",
+  "1.14.4": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w03a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w03a"
+        "net.fabricmc:intermediary:1.14.4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "19w02a": {
-    "loader": "0.14.5",
+  "1.14.4-pre1": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:19w02a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:19w02a"
+        "net.fabricmc:intermediary:1.14.4-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre1"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w50a": {
-    "loader": "0.14.5",
+  "1.14.4-pre2": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w50a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w50a"
+        "net.fabricmc:intermediary:1.14.4-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre2"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w49a": {
-    "loader": "0.14.5",
+  "1.14.4-pre3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w49a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w49a"
+        "net.fabricmc:intermediary:1.14.4-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w48b": {
-    "loader": "0.14.5",
+  "1.14.4-pre4": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w48b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w48b"
+        "net.fabricmc:intermediary:1.14.4-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre4"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w48a": {
-    "loader": "0.14.5",
+  "1.14.4-pre5": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w48a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w48a"
+        "net.fabricmc:intermediary:1.14.4-pre5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre5"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w47b": {
-    "loader": "0.14.5",
+  "1.14.4-pre6": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w47b"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w47b"
+        "net.fabricmc:intermediary:1.14.4-pre6"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre6"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w47a": {
-    "loader": "0.14.5",
+  "1.14.4-pre7": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w47a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w47a"
+        "net.fabricmc:intermediary:1.14.4-pre7"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14.4-pre7"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w46a": {
-    "loader": "0.14.5",
+  "1.14_combat-0": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w46a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w46a"
+        "net.fabricmc:intermediary:1.14_combat-0"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14_combat-0"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w45a": {
-    "loader": "0.14.5",
+  "1.14_combat-212796": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w45a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w45a"
+        "net.fabricmc:intermediary:1.14_combat-212796"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14_combat-212796"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w44a": {
-    "loader": "0.14.5",
+  "1.14_combat-3": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w44a"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w44a"
+        "net.fabricmc:intermediary:1.14_combat-3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.14_combat-3"
       ]
-    }
+    },
+    "loader": "0.14.5"
   },
-  "18w43c": {
-    "loader": "0.14.5",
+  "1.15": {
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w43c"
-      ],
       "client": [
-        "net.fabricmc:intermediary:18w43c"
+        "net.fabricmc:intermediary:1.15"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15"
       ]
-    }
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre6": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre6"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre6"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15-pre7": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15-pre7"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15-pre7"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15.1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15.1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15.1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15.1-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15.1-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15.1-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15.2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15.2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15.2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15.2-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15.2-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15.2-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15.2-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15.2-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15.2-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.15_combat-1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.15_combat-1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.15_combat-1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre6": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre6"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre6"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre7": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre7"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre7"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-pre8": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-pre8"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-pre8"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.2-rc2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.2-rc2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.2-rc2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.3-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.3-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.3-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.4-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.4-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.4-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.4-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.4-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.4-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.4-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.4-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.4-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16.5-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16.5-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16.5-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.16_combat-3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.16_combat-3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.16_combat-3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-pre4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-pre4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-pre5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-pre5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-pre5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17-rc2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17-rc2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17-rc2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.17.1-rc2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.17.1-rc2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.17.1-rc2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre6": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre6"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre6"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre7": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre7"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre7"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-pre8": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-pre8"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-pre8"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-rc2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-rc2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-rc2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-rc3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-rc3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-rc3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18-rc4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18-rc4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18-rc4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.1-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.1-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.1-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.1-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.1-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.1-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.1-rc2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.1-rc2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.1-rc2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.1-rc3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.1-rc3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.1-rc3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.2-pre1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.2-pre1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.2-pre1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.2-pre2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.2-pre2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.2-pre2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.2-pre3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.2-pre3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.2-pre3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18.2-rc1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18.2-rc1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18.2-rc1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-1"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-2": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-2"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-2"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-3": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-3"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-3"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-4": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-4"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-4"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-5": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-5"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-5"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-6": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-6"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-6"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.18_experimental-snapshot-7": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-7"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.18_experimental-snapshot-7"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "1.19_deep_dark_experimental_snapshot-1": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:1.19_deep_dark_experimental_snapshot-1"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:1.19_deep_dark_experimental_snapshot-1"
+      ]
+    },
+    "loader": "0.14.5"
   },
   "18w43b": {
-    "loader": "0.14.5",
     "libraries": {
-      "server": [
-        "net.fabricmc:intermediary:18w43b"
-      ],
       "client": [
         "net.fabricmc:intermediary:18w43b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w43b"
       ]
-    }
+    },
+    "loader": "0.14.5"
+  },
+  "18w43c": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w43c"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w43c"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w44a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w44a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w44a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w45a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w45a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w45a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w46a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w46a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w46a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w47a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w47a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w47a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w47b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w47b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w47b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w48a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w48a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w48a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w48b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w48b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w48b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w49a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w49a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w49a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "18w50a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:18w50a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:18w50a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w02a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w02a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w02a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w03a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w03a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w03a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w03b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w03b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w03b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w03c": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w03c"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w03c"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w04a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w04a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w04a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w04b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w04b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w04b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w05a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w05a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w05a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w06a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w06a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w06a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w07a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w07a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w07a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w08a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w08a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w08a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w08b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w08b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w08b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w09a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w09a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w09a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w11a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w11a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w11a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w11b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w11b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w11b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w12a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w12a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w12a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w12b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w12b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w12b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w13a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w13a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w13a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w13b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w13b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w13b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w14a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w14a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w14a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w14b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w14b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w14b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w34a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w34a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w34a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w35a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w35a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w35a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w36a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w36a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w36a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w37a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w37a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w37a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w38a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w38a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w38a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w38b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w38b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w38b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w39a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w39a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w39a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w40a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w40a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w40a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w41a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w41a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w41a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w42a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w42a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w42a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w44a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w44a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w44a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w45a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w45a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w45a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w45b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w45b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w45b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w46a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w46a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w46a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "19w46b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:19w46b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:19w46b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w06a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w06a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w06a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w07a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w07a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w07a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w08a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w08a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w08a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w09a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w09a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w09a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w10a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w10a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w10a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w11a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w11a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w11a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w12a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w12a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w12a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w13a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w13a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w13a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w13b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w13b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w13b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w14a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w14a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w14a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w14infinite": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w14infinite"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w14infinite"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w15a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w15a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w15a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w16a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w16a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w16a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w17a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w17a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w17a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w18a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w18a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w18a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w19a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w19a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w19a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w20a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w20a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w20a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w20b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w20b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w20b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w21a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w21a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w21a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w22a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w22a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w22a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w27a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w27a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w27a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w28a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w28a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w28a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w29a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w29a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w29a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w30a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w30a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w30a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w45a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w45a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w45a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w46a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w46a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w46a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w48a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w48a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w48a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w49a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w49a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w49a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "20w51a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:20w51a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:20w51a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w03a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w03a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w03a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w05a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w05a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w05a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w05b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w05b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w05b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w06a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w06a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w06a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w07a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w07a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w07a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w08a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w08a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w08a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w08b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w08b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w08b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w10a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w10a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w10a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w11a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w11a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w11a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w13a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w13a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w13a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w14a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w14a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w14a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w15a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w15a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w15a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w16a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w16a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w16a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w17a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w17a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w17a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w18a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w18a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w18a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w19a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w19a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w19a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w20a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w20a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w20a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w37a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w37a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w37a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w38a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w38a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w38a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w39a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w39a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w39a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w40a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w40a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w40a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w41a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w41a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w41a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w42a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w42a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w42a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w43a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w43a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w43a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "21w44a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:21w44a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:21w44a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w03a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w03a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w03a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w05a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w05a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w05a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w06a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w06a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w06a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w07a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w07a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w07a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w11a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w11a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w11a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w12a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w12a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w12a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w13a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w13a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w13a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w13oneblockatatime": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w13oneblockatatime"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w13oneblockatatime"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w14a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w14a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w14a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w15a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w15a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w15a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w16a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w16a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w16a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w16b": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w16b"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w16b"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w17a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w17a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w17a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w18a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w18a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w18a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "22w19a": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:22w19a"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:22w19a"
+      ]
+    },
+    "loader": "0.14.5"
+  },
+  "3D Shareware v1.34": {
+    "libraries": {
+      "client": [
+        "net.fabricmc:intermediary:3D Shareware v1.34"
+      ],
+      "server": [
+        "net.fabricmc:intermediary:3D Shareware v1.34"
+      ]
+    },
+    "loader": "0.14.5"
   }
 }
