@@ -109,11 +109,11 @@ def get_loader_infos(game_version):
 def update_profiles():
     for version in profiles:
         profile = profiles[version]
-        profile[LIBRARIES][SERVER] = list(profile[LIBRARIES][SERVER].difference(loaders[profile[LOADER]][LIBRARIES]))
-        profile[LIBRARIES][CLIENT] = list(profile[LIBRARIES][CLIENT].difference(loaders[profile[LOADER]][LIBRARIES]))
+        profile[LIBRARIES][SERVER] = sorted(list(profile[LIBRARIES][SERVER].difference(loaders[profile[LOADER]][LIBRARIES])))
+        profile[LIBRARIES][CLIENT] = sorted(list(profile[LIBRARIES][CLIENT].difference(loaders[profile[LOADER]][LIBRARIES])))
     
     for loader in loaders:
-        loaders[loader][LIBRARIES] = list(loaders[loader][LIBRARIES])
+        loaders[loader][LIBRARIES] = sorted(list(loaders[loader][LIBRARIES]))
 
 for game_version in get_game_versions():
     # Only fetch latest stable loader now
@@ -125,10 +125,10 @@ for game_version in get_game_versions():
 update_profiles()
 
 with open("libraries.json", 'w+') as f:
-    json.dump(libraries, f, indent=2)
+    json.dump(libraries, f, indent=2, sort_keys=True)
 
 with open("profiles.json", 'w+') as f:
-    json.dump(profiles, f, indent=2)
+    json.dump(profiles, f, indent=2, sort_keys=True)
 
 with open('loaders.json', 'w+') as f:
-    json.dump(loaders, f, indent=2)
+    json.dump(loaders, f, indent=2, sort_keys=True)

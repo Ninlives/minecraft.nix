@@ -18,7 +18,7 @@ try:
             sha1 = re.match(sha1_pattern, url).group(1)
             manifest_hashes[v] = { 'url': url, 'sha1': sha1 }
         with open("manifests.json", 'w+') as f:
-            json.dump(manifest_hashes, f, indent=2)
+            json.dump(manifest_hashes, f, indent=2, sort_keys=True)
     else:
         raise RequestException(f"{response.status_code} returned from {url}.")
 except RequestException as e:
