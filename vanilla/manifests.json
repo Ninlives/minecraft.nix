@@ -571,6 +571,10 @@
     "sha1": "b187b8a66e27ba8f9fc0f2fc1bb0f48669e06db0",
     "url": "https://launchermeta.mojang.com/v1/packages/b187b8a66e27ba8f9fc0f2fc1bb0f48669e06db0/1.18.2-rc1.json"
   },
+  "1.19-pre1": {
+    "sha1": "e6252b857aa30ca29c7edd6fc063c38dd4599ae3",
+    "url": "https://launchermeta.mojang.com/v1/packages/e6252b857aa30ca29c7edd6fc063c38dd4599ae3/1.19-pre1.json"
+  },
   "1.2.1": {
     "sha1": "1a45c035ebb969dbac4e0c39582e974ad7f74a9e",
     "url": "https://launchermeta.mojang.com/v1/packages/1a45c035ebb969dbac4e0c39582e974ad7f74a9e/1.2.1.json"
@@ -2236,48 +2240,48 @@
     "url": "https://launchermeta.mojang.com/v1/packages/9bfbc11c54454c38e00c78f88cbcfaec845d45c7/22w07a.json"
   },
   "22w11a": {
-    "sha1": "678af8b4bc9f875b7066a724fcbbca81e3d98873",
-    "url": "https://launchermeta.mojang.com/v1/packages/678af8b4bc9f875b7066a724fcbbca81e3d98873/22w11a.json"
+    "sha1": "1a8cbd0269278a37639a8519aca78c6a4aa70439",
+    "url": "https://launchermeta.mojang.com/v1/packages/1a8cbd0269278a37639a8519aca78c6a4aa70439/22w11a.json"
   },
   "22w12a": {
-    "sha1": "a51a12a0bf44ae5803067426310c81114f361397",
-    "url": "https://launchermeta.mojang.com/v1/packages/a51a12a0bf44ae5803067426310c81114f361397/22w12a.json"
+    "sha1": "d16bab346cda79822a811286b13f0f2be25cc302",
+    "url": "https://launchermeta.mojang.com/v1/packages/d16bab346cda79822a811286b13f0f2be25cc302/22w12a.json"
   },
   "22w13a": {
-    "sha1": "45ead7999e008e94ee84f10277ed024e5d80046b",
-    "url": "https://launchermeta.mojang.com/v1/packages/45ead7999e008e94ee84f10277ed024e5d80046b/22w13a.json"
+    "sha1": "beb47a79e8acc7d1a6fcf252161a4d2d94ed7cd3",
+    "url": "https://launchermeta.mojang.com/v1/packages/beb47a79e8acc7d1a6fcf252161a4d2d94ed7cd3/22w13a.json"
   },
   "22w13oneblockatatime": {
-    "sha1": "69511d968d6a66007508b8740ac8ecce85c7fcaa",
-    "url": "https://launchermeta.mojang.com/v1/packages/69511d968d6a66007508b8740ac8ecce85c7fcaa/22w13oneblockatatime.json"
+    "sha1": "3fe8c0037845cb5469da95ee67634e43486c7ecb",
+    "url": "https://launchermeta.mojang.com/v1/packages/3fe8c0037845cb5469da95ee67634e43486c7ecb/22w13oneblockatatime.json"
   },
   "22w14a": {
-    "sha1": "6dba786904ea5f1b6f5e4788500467f0896f773d",
-    "url": "https://launchermeta.mojang.com/v1/packages/6dba786904ea5f1b6f5e4788500467f0896f773d/22w14a.json"
+    "sha1": "19d90670ccbee4e7e886f56032ae6c54fb94d9ec",
+    "url": "https://launchermeta.mojang.com/v1/packages/19d90670ccbee4e7e886f56032ae6c54fb94d9ec/22w14a.json"
   },
   "22w15a": {
-    "sha1": "93e38c30d0b8c219350187992e8cd2d2bf907e53",
-    "url": "https://launchermeta.mojang.com/v1/packages/93e38c30d0b8c219350187992e8cd2d2bf907e53/22w15a.json"
+    "sha1": "b0f68f569c340189600cdd4acc13630fed18abba",
+    "url": "https://launchermeta.mojang.com/v1/packages/b0f68f569c340189600cdd4acc13630fed18abba/22w15a.json"
   },
   "22w16a": {
-    "sha1": "5fcf9fbdaba70582a6397c6e074dd388fba8a80f",
-    "url": "https://launchermeta.mojang.com/v1/packages/5fcf9fbdaba70582a6397c6e074dd388fba8a80f/22w16a.json"
+    "sha1": "f0bb6951d5d5e43564fa3228ab210dd7f6ad6e10",
+    "url": "https://launchermeta.mojang.com/v1/packages/f0bb6951d5d5e43564fa3228ab210dd7f6ad6e10/22w16a.json"
   },
   "22w16b": {
-    "sha1": "03f92fc78d664f7d9ce87ea9e6065cbdc2553ec8",
-    "url": "https://launchermeta.mojang.com/v1/packages/03f92fc78d664f7d9ce87ea9e6065cbdc2553ec8/22w16b.json"
+    "sha1": "c3a106c9f1f2325a47dae86a6ee4718e64ff9f34",
+    "url": "https://launchermeta.mojang.com/v1/packages/c3a106c9f1f2325a47dae86a6ee4718e64ff9f34/22w16b.json"
   },
   "22w17a": {
-    "sha1": "07f6c870988cce59b3a06c92e134af7a274e21bb",
-    "url": "https://launchermeta.mojang.com/v1/packages/07f6c870988cce59b3a06c92e134af7a274e21bb/22w17a.json"
+    "sha1": "837a2ac1d396e3f1d94dd82b096c6c39c8f8ac89",
+    "url": "https://launchermeta.mojang.com/v1/packages/837a2ac1d396e3f1d94dd82b096c6c39c8f8ac89/22w17a.json"
   },
   "22w18a": {
-    "sha1": "e9415041683d2928e0eb0851fd4c628e7cf2a3f0",
-    "url": "https://launchermeta.mojang.com/v1/packages/e9415041683d2928e0eb0851fd4c628e7cf2a3f0/22w18a.json"
+    "sha1": "af51beebc5e8313e2112154c51dfe823c260f080",
+    "url": "https://launchermeta.mojang.com/v1/packages/af51beebc5e8313e2112154c51dfe823c260f080/22w18a.json"
   },
   "22w19a": {
-    "sha1": "c7a98d0634a35e212276ce2e47c2ed8064e605bb",
-    "url": "https://launchermeta.mojang.com/v1/packages/c7a98d0634a35e212276ce2e47c2ed8064e605bb/22w19a.json"
+    "sha1": "be1036d978034323281dd0816726a1064b8c4d9a",
+    "url": "https://launchermeta.mojang.com/v1/packages/be1036d978034323281dd0816726a1064b8c4d9a/22w19a.json"
   },
   "3D Shareware v1.34": {
     "sha1": "fe072c0f3f14f254407068b9515efd825b736a2e",
