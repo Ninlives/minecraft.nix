@@ -1,8 +1,8 @@
 {
-  "0.14.5": {
+  "0.14.6": {
     "libraries": [
       "net.fabricmc:access-widener:2.1.0",
-      "net.fabricmc:fabric-loader:0.14.5",
+      "net.fabricmc:fabric-loader:0.14.6",
       "net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5",
       "net.fabricmc:tiny-mappings-parser:0.3.0+build.17",
       "net.fabricmc:tiny-remapper:0.8.2",
