@@ -56,6 +56,10 @@ let
     USER_NAME=$(${json} '.["name"]' "$PROFILE")
     ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
 
+    # prepare assets directory
+    mkdir assets
+    ln -s ${config.assets.directory}/* assets/
+
     export LD_LIBRARY_PATH=${libPath}''${LD_LIBRARY_PATH:+':'}$LD_LIBRARY_PATH
     exec ${jre}/bin/java \
       -Djava.library.path='${
@@ -69,9 +73,9 @@ let
       } \
       ${config.mainClass} \
       --version "${config.version}" \
-      --assetsDir "${config.assets.directory}" \
       --assetIndex "${config.assets.index}" \
       --uuid "$UUID" \
+      --username "$USER_NAME" \
       --accessToken "$ACCESS_TOKEN" \
       "''${mcargs[@]}"
   '';
