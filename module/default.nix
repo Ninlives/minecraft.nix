@@ -57,8 +57,8 @@ let
     ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
 
     # prepare assets directory
-    mkdir assets
-    ln -s ${config.assets.directory}/* assets/
+    mkdir -p assets
+    ln -sf ${config.assets.directory}/* assets/
 
     export LD_LIBRARY_PATH=${libPath}''${LD_LIBRARY_PATH:+':'}$LD_LIBRARY_PATH
     exec ${jre}/bin/java \
