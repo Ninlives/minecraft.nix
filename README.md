@@ -71,19 +71,19 @@ You may use the `withConfig` function to add extra configurations to the game:
 For client:
 
 | Name | Description |
-+------+-------------+
-| mods | List of mods load by the game. |
-| resourcePacks | List of resourcePacks available to the game. |
-| shaderPacks | List of shaderPacks available to the game. The mod for loading shader packs should be add to option ``mods'' explicitly. |
-| authClientID | The client id of the authentication application. |
-| declarative | Whether using a declarative way to manage game files. Currently only resource packs and shader packs are managed. |
+|------|-------------|
+| **mods** | List of mods load by the game. |
+| **resourcePacks** | List of resourcePacks available to the game. |
+| **shaderPacks** | List of shaderPacks available to the game. The mod for loading shader packs should be add to option ``mods'' explicitly. |
+| **authClientID** | The client id of the authentication application. |
+| **declarative** | Whether using a declarative way to manage game files. Currently only resource packs and shader packs are managed. |
 
 For server:
 
 | Name | Description |
-+------+-------------+
-| mods | List of mods load by the game. |
-| declarative | Whether using a declarative way to manage game files. No-op for server currently. |
+|------|-------------|
+| **mods** | List of mods load by the game. |
+| **declarative** | Whether using a declarative way to manage game files. No-op for server currently. |
 
 # TODO
 
