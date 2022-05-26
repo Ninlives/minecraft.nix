@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> { }, lib ? pkgs.lib, clientID, OS ? "linux" }:
+{ pkgs, lib, authClientID, OS }:
 with lib;
 let
   inherit (pkgs)
@@ -6,11 +6,6 @@ let
     runCommand;
   inherit (pkgs.xorg) libXcursor libXrandr libXxf86vm;
   inherit (pkgs.writers) writePython3;
-  inherit (import ./launcher.nix { inherit pkgs lib; }) launchWrapper;
-  manifests = importJSON ./vanilla/manifests.json;
-  fabricProfiles = importJSON ./fabric/profiles.json;
-  fabricLibraries = importJSON ./fabric/libraries.json;
-  fabricLoaders = importJSON ./fabric/loaders.json;
 
   preloadLibraries = [
     libpulseaudio
@@ -21,22 +16,6 @@ let
     flite
     alsa-lib
   ];
-
-  convertVersion = v: "v" + replaceStrings [ "." " " ] [ "_" "_" ] v;
-  fetchJar = name:
-    let
-      inherit (fabricLibraries.${name}) repo hash;
-      splitted = splitString ":" name;
-      org = builtins.elemAt splitted 0;
-      art = builtins.elemAt splitted 1;
-      ver = builtins.elemAt splitted 2;
-      path =
-        "${replaceStrings [ "." ] [ "/" ] org}/${art}/${ver}/${art}-${ver}.jar";
-      url = "${repo}/${path}";
-    in fetchurl {
-      inherit url;
-      ${hash.type} = hash.value;
-    };
 
   buildVanillaLibraries = artifacts:
     map (lib: fetchurl { inherit (lib.downloads.artifact) url sha1; })
@@ -90,7 +69,7 @@ let
           true;
       artifacts = lib.filter isAllowed versionInfo.libraries;
     in {
-      inherit clientID;
+      inherit authClientID;
       version = versionInfo.id;
       libraries.java = buildVanillaLibraries artifacts ++ [ client ];
       libraries.native = buildNativeLibraries artifacts;
@@ -101,10 +80,7 @@ let
 
   buildVanillaModules = versionInfo: assetsIndex: [
     (buildBasicModule versionInfo assetsIndex)
-    {
-
-      inherit (versionInfo) mainClass;
-    }
+    { inherit (versionInfo) mainClass; }
   ];
 
   buildFabricModules = versionInfo: assetsIndex: fabricProfile:
@@ -121,34 +97,9 @@ let
       })
     ];
 
-  mkLauncher = modules:
-    let
-      final = evalModules {
-        modules = modules
-          ++ [ ({ _module.args.pkgs = pkgs; }) (import ./module) ];
-      };
-    in final.config.launcher // {
-      withConfig = extraConfig: mkLauncher (modules ++ toList extraConfig);
-    };
-
-  buildMc = versionInfo: assetsIndex: fabricProfile:
-    let
-      fabric = {
-        client =
-          mkLauncher (buildFabricModules versionInfo assetsIndex fabricProfile);
-      };
-    in {
-      vanilla.client = mkLauncher (buildVanillaModules versionInfo assetsIndex);
-    } // (optionalAttrs (fabricProfile != null) { inherit fabric; });
-
-  prepareMc = gameVersion: assets:
-    let
-      versionInfo = importJSON (fetchurl { inherit (assets) url sha1; });
-      assetsIndex =
-        importJSON (fetchurl { inherit (versionInfo.assetIndex) url sha1; });
-      fabricProfile = fabricProfiles.${gameVersion} or null;
-    in buildMc versionInfo assetsIndex fabricProfile;
-in mapAttrs' (gameVersion: assets: {
-  name = convertVersion gameVersion;
-  value = prepareMc gameVersion assets;
-}) manifests
+in {
+  build = mkBuild {
+    baseModulePath = ../module/client.nix;
+    inherit buildFabricModules buildVanillaModules;
+  };
+}

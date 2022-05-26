@@ -25,7 +25,7 @@ let
     libraries = with pkgs.python3Packages; [ requests pyjwt colorama ];
     flakeIgnore = [ "E501" "E402" "W391" ];
   } ''
-    ${builtins.replaceStrings [ "@CLIENT_ID@" ] [ config.clientID ]
+    ${builtins.replaceStrings [ "@CLIENT_ID@" ] [ config.authClientID ]
     (builtins.readFile ../auth/msa.py)}
     ${builtins.readFile ../auth/login.py}
   '';
@@ -147,7 +147,7 @@ in {
         "List of shaderPacks available to the game. The mod for loading shader packs should be add to option ``mods'' explicitly.";
       default = [ ];
     };
-    clientID = mkOption {
+    authClientID = mkOption {
       type = singleLineStr;
       description = "The client id of the authentication application.";
     };

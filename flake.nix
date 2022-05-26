@@ -19,10 +19,10 @@
             builtins.throw "Unsupported system ${system}";
         py = pkgs.python3.withPackages (p: [ p.requests ]);
       in {
-        legacyPackages = lib.makeOverridable (import ./builder.nix) {
+        legacyPackages = lib.makeOverridable (import ./all-packages.nix) {
           inherit pkgs lib OS;
           # Users may override this with their own application id
-          clientID = "adf6c624-b9ba-472e-9469-e54cc8f98e87";
+          authClientID = "adf6c624-b9ba-472e-9469-e54cc8f98e87";
         };
         apps.update = mkApp {
           drv = let
