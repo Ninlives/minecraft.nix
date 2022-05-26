@@ -6,7 +6,7 @@ Inspired by [this thread](https://discourse.nixos.org/t/minecraft-launcher-in-pu
 
 # USAGE
 
-## Basic
+## Run Client
 
 ```sh
 $ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.client
@@ -14,6 +14,12 @@ $ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.client
 
 You will be asked to login before launch the game.
 Only MSA login is supported, since Microsoft has started to migrate all Mojang accounts to Microsoft accounts.
+
+## Run Server
+
+```sh
+$ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.server
+```
 
 ## Configuration
 
@@ -59,6 +65,25 @@ You may use the `withConfig` function to add extra configurations to the game:
     });
 }
 ```
+
+### Available Options
+
+For client:
+
+| Name | Description |
++------+-------------+
+| mods | List of mods load by the game. |
+| resourcePacks | List of resourcePacks available to the game. |
+| shaderPacks | List of shaderPacks available to the game. The mod for loading shader packs should be add to option ``mods'' explicitly. |
+| authClientID | The client id of the authentication application. |
+| declarative | Whether using a declarative way to manage game files. Currently only resource packs and shader packs are managed. |
+
+For server:
+
+| Name | Description |
++------+-------------+
+| mods | List of mods load by the game. |
+| declarative | Whether using a declarative way to manage game files. No-op for server currently. |
 
 # TODO
 
