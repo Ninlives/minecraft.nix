@@ -27,5 +27,9 @@ jobs:
       run: nix run .#update
     - name: Commit
       run: |
-        git diff-index --quiet HEAD \
-        || (git commit -am "Update manifest - Automated Commit" && git push)
+        if [ -z "$(git status --porcelain)" ]; then
+          echo "working directory is clean, skip commit and push"
+        else
+          git commit -am "Update manifest - Automated Commit"
+          git push
+        fi
