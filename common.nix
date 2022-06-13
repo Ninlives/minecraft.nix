@@ -41,12 +41,24 @@ with self; {
         mkLauncher baseModulePath (buildVanillaModules versionInfo assetsIndex);
     } // (optionalAttrs (fabricProfile != null) { inherit fabric; });
 
+  prefetchedOrFetch = { url, sha1, directory }:
+    let prefetchedPath = directory + /${sha1}.json;
+    in if builtins.pathExists prefetchedPath then
+      prefetchedPath
+    else
+        pkgs.fetchurl { inherit url sha1; };
+
   mkBuild = { baseModulePath, buildFabricModules, buildVanillaModules }:
     gameVersion: assets:
     let
-      versionInfo = importJSON (pkgs.fetchurl { inherit (assets) url sha1; });
-      assetsIndex =
-        importJSON (pkgs.fetchurl { inherit (versionInfo.assetIndex) url sha1; });
+      versionInfo = importJSON (prefetchedOrFetch {
+        inherit (assets) url sha1;
+        directory = ./vanilla/versions;
+      });
+      assetsIndex = importJSON (prefetchedOrFetch {
+        inherit (versionInfo.assetIndex) url sha1;
+        directory = ./vanilla/asset_indices;
+      });
       fabricProfile = fabricProfiles.${gameVersion} or null;
     in buildMc {
       inherit baseModulePath buildFabricModules buildVanillaModules versionInfo
