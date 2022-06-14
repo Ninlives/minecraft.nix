@@ -3,8 +3,13 @@
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs";
   inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.metadata = {
+    url = "github:Ninlives/minecraft.json";
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.flake-utils.follows = "flake-utils";
+  };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, metadata }:
     with flake-utils.lib;
     eachDefaultSystem (system:
       let
@@ -20,7 +25,7 @@
         py = pkgs.python3.withPackages (p: [ p.requests ]);
       in {
         legacyPackages = lib.makeOverridable (import ./all-packages.nix) {
-          inherit pkgs lib OS;
+          inherit pkgs lib metadata OS;
           # Users may override this with their own application id
           authClientID = "adf6c624-b9ba-472e-9469-e54cc8f98e87";
         };

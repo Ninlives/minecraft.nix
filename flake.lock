@@ -15,6 +15,29 @@
         "type": "github"
       }
     },
+    "metadata": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1655210660,
+        "narHash": "sha256-UBLHtKl21PN63BrGDb92x/TMSeXMErug+w9eM6CLp34=",
+        "owner": "Ninlives",
+        "repo": "minecraft.json",
+        "rev": "1a1905934697f3ea34716253ff9b85bc56e3e2a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Ninlives",
+        "repo": "minecraft.json",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1652885393,
@@ -33,6 +56,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "metadata": "metadata",
         "nixpkgs": "nixpkgs"
       }
     }

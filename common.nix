@@ -1,10 +1,10 @@
-{ pkgs, lib }:
+{ pkgs, lib, metadata }:
 self: super:
 with self; {
 
-  fabricProfiles = importJSON ./fabric/profiles.json;
-  fabricLibraries = importJSON ./fabric/libraries.json;
-  fabricLoaders = importJSON ./fabric/loaders.json;
+  fabricProfiles = metadata.fabric.profiles;
+  fabricLibraries = metadata.fabric.libraries;
+  fabricLoaders = metadata.fabric.loaders;
 
   fetchJar = name:
     let
@@ -44,9 +44,8 @@ with self; {
   mkBuild = { baseModulePath, buildFabricModules, buildVanillaModules }:
     gameVersion: assets:
     let
-      versionInfo = importJSON (pkgs.fetchurl { inherit (assets) url sha1; });
-      assetsIndex =
-        importJSON (pkgs.fetchurl { inherit (versionInfo.assetIndex) url sha1; });
+      versionInfo = metadata.versions.${assets.sha1};
+      assetsIndex = metadata.assets.${versionInfo.assetIndex.sha1};
       fabricProfile = fabricProfiles.${gameVersion} or null;
     in buildMc {
       inherit baseModulePath buildFabricModules buildVanillaModules versionInfo
