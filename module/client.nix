@@ -36,7 +36,8 @@ let
   in writeShellScript "minecraft" ''
     RED='\033[0;31m'
     FIN='\033[0m'
-    PROFILE="$HOME/.local/share/minecraft.nix/profile.json"
+    XDG_DATA_HOME="''${XDG_DATA_HOME:-~/.local/share}"
+    PROFILE="$XDG_DATA_HOME/minecraft.nix/profile.json"
 
     mcargs=()
     while [[ "$#" -gt 0 ]];do
