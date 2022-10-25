@@ -2,7 +2,7 @@
 
 Inspired by [this thread](https://discourse.nixos.org/t/minecraft-launcher-in-pure-nix-all-mc-versions/3937?u=ninlives), this flake contains derivations of both vanilla and fabric edition (if available) for all versions of minecraft.
 
-(Old versions are not fully tested, feel free to file a issue if your encounter problems.)
+(Old versions are not fully tested, feel free to file an issue if you encounter problems.)
 
 # USAGE
 
@@ -28,10 +28,14 @@ You may use the `withConfig` function to add extra configurations to the game:
 ```sh
 {
   description = "A simple modpack.";
-  inputs.minecraft.url = "github:Ninlives/minecraft.nix";
+  inputs.minecraft = {
+    url = "github:Ninlives/minecraft.nix";
+    inputs.metadata.follows = "minecraft-metadata";
+  };
+  inputs.minecraft-metadata.url = "github:Ninlives/minecraft.json";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, minecraft, flake-utils }:
+  outputs = { self, minecraft, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system: {
       packages.minecraft-with-ae2 =
         (minecraft.legacyPackages.${system}.v1_18_1.fabric.client.withConfig [{
