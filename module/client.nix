@@ -22,7 +22,7 @@ let
     };
 
   auth = writePython3 "checkAuth" {
-    libraries = with pkgs.python3Packages; [ requests pyjwt colorama ];
+    libraries = with pkgs.python3Packages; [ requests pyjwt colorama cryptography ];
     flakeIgnore = [ "E501" "E402" "W391" ];
   } ''
     ${builtins.replaceStrings [ "@CLIENT_ID@" ] [ config.authClientID ]
