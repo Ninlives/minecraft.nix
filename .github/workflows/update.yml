@@ -1,0 +1,26 @@
+name: "Update inputs"
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Install nixFlake
+      uses: cachix/install-nix-action@v19
+      with:
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+    - name: Configure git
+      run: |
+        git config --global user.name 'Automation - Ninlives'
+        git config --global user.email 'wqseleven@gmail.com'
+    - name: Nix flake update
+      run: nix flake update --commit-lock-file
+    - name: Push
+      run: |
+        git push
