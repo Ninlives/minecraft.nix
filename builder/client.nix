@@ -38,7 +38,7 @@ let
           let
             asset = fetchurl {
               sha1 = a.hash;
-              url = "http://resources.download.minecraft.net/" + hashTwo;
+              url = "https://resources.download.minecraft.net/" + hashTwo;
             };
             hashTwo = builtins.substring 0 2 a.hash + "/" + a.hash;
           in ''
