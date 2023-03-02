@@ -25,11 +25,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677115610,
-        "narHash": "sha256-UmEPwWtavd+7KN7VldRAB4xD8VB9N2p7fyLHtKw/BQo=",
+        "lastModified": 1677720921,
+        "narHash": "sha256-7RQDP6TfsNF2aHQnWQ31MT6YI98ddu5ymPlxKZ+PPOI=",
         "owner": "Ninlives",
         "repo": "minecraft.json",
-        "rev": "047691466f845b30674fd08c3385c28a72fe4423",
+        "rev": "26ccb2b6230c00c3cece58ebc48c20c7ebbd1aeb",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1677633218,
-        "narHash": "sha256-XKp6qtsTFHD2/mh7B+s9VZeySPAs6SHWOOOG5HFBupE=",
+        "lastModified": 1677719885,
+        "narHash": "sha256-d9Lc2bZNgelX9I2gxN/TAwIE+RcEDthH+zysYWPlQ1k=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ea737a0ee0f51f0632d554e9cda5acc32a721fa0",
+        "rev": "00ebdb7b9cf257fc26bdc49749d1204ef3667ddc",
         "type": "github"
       },
       "original": {
