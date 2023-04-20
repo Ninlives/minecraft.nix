@@ -43,7 +43,7 @@ let
         type = bool;
         default = false;
         description = ''
-          Whether to link contents of the directory recursively instead of link the whole directory.
+          Whether to link contents of the directory recursively instead of linking the whole directory.
         '';
       };
     };
@@ -80,12 +80,12 @@ in {
     };
   };
   config = {
-    launch.prepare.linkFiles = {
+    launchScript.preparation.linkFiles = {
       text = ''
         ${concatMapStringsSep "\n" checkAndLink (attrValues enabledFiles)}
       '';
       deps = [ "enterWorkingDirectory" ];
     };
-    launch.path = with pkgs; [ xorg.lndir ];
+    launchScript.path = with pkgs; [ xorg.lndir ];
   };
 }

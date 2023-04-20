@@ -13,7 +13,7 @@ let
     merge = mergeEqualOption;
   };
 in {
-  imports = [ ./common/launch-scripts.nix ./common/files.nix ];
+  imports = [ ./common/launch-script.nix ./common/files.nix ];
 
   options = {
     # Interface
@@ -51,7 +51,7 @@ in {
   };
 
   config = {
-    launch.final = ''
+    launchScript.gameExecution = ''
       exec ${jre}/bin/java \
         -cp '${concatStringsSep ":" config.libraries.java}' \
         ${
@@ -66,6 +66,7 @@ in {
         } \
         "''${runner_args[@]}"
     '';
-    launcher = writeShellScriptBin "minecraft-server" config.launch.script;
+    launcher =
+      writeShellScriptBin "minecraft-server" config.launchScript.finalText;
   };
 }

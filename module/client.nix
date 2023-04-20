@@ -21,7 +21,7 @@ let
       readOnly = true;
     };
 in {
-  imports = [ ./common/launch-scripts.nix ./common/files.nix ];
+  imports = [ ./common/launch-script.nix ./common/files.nix ];
 
   options = {
     # Interface
@@ -87,8 +87,8 @@ in {
       recursive = !config.declarative;
     };
 
-    launch = {
-      prepare = {
+    launchScript = {
+      preparation = {
         parseRunnerArgs = {
           deps = [ "parseArgs" ];
           text = ''
@@ -135,7 +135,7 @@ in {
           '';
         };
       };
-      final = let libPath = makeLibraryPath config.libraries.preload;
+      gameExecution = let libPath = makeLibraryPath config.libraries.preload;
       in ''
         export LD_LIBRARY_PATH=${libPath}''${LD_LIBRARY_PATH:+':'}$LD_LIBRARY_PATH
         exec ${jre}/bin/java \
@@ -157,6 +157,6 @@ in {
           "''${mcargs[@]}"
       '';
     };
-    launcher = writeShellScriptBin "minecraft" config.launch.script;
+    launcher = writeShellScriptBin "minecraft" config.launchScript.finalText;
   };
 }

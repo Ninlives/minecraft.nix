@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  cfg = config.launch;
+  cfg = config.launchScript;
   inherit (lib)
     mkOption attrNames mapAttrs textClosureMap id getBin isString
     concatMapStringsSep;
@@ -41,8 +41,8 @@ let
 
   mkPath = p: if isString p then p else "${getBin p}/bin";
 
-  mkLaunchScript = prepareScripts: finalScript:
-    let wrapped = mapAttrs wrapScriptSnippetEntry prepareScripts;
+  mkLaunchScript = preparation: gameExecution:
+    let wrappedPreparation = mapAttrs wrapScriptSnippetEntry preparation;
     in ''
       #!${pkgs.runtimeShell}
 
@@ -55,7 +55,7 @@ let
       ${concatMapStringsSep "\n" (p: ''export PATH="${mkPath p}:$PATH"'')
       cfg.path}
 
-      ${textClosureMap id wrapped (attrNames wrapped)}
+      ${textClosureMap id wrappedPreparation (attrNames wrappedPreparation)}
 
       if (( _status > 0 )); then
         RED='\033[0;31m'
@@ -64,25 +64,25 @@ let
         exit $_status
       fi
 
-      ${wrapScriptSnippet "final" finalScript}
+      ${wrapScriptSnippet "gameExecution" gameExecution}
 
       # in case the final script does not perform exec
       exit $_status
     '';
 in {
   options = {
-    launch = {
-      prepare = mkOption {
+    launchScript = {
+      preparation = mkOption {
         type = attrsOf (submodule scriptOptions);
-        description = "Set of prepare scripts.";
+        description = "Set of preparation scripts.";
         default = { };
       };
-      final = mkOption {
+      gameExecution = mkOption {
         type = lines;
         description = ''
-          Final script to run. Typically `exec java`.
+          Script to execute the game. Typically `exec java ...`.
 
-          If errors happened in launch scripts, the final script will not be run.
+          If errors happened in launch scripts, this script will not be run.
         '';
       };
       path = mkOption {
@@ -93,19 +93,19 @@ in {
           Only the bin directory will be added.
         '';
       };
-      script = mkOption {
+      finalText = mkOption {
         type = lines;
         readOnly = true;
-        default = mkLaunchScript (cfg.prepare) (cfg.final);
+        default = mkLaunchScript (cfg.preparation) (cfg.gameExecution);
         description = ''
-          Full script generated.
+          Final script text generated.
         '';
       };
     };
   };
   config = {
     # common launch scripts
-    launch.prepare = {
+    launchScript.preparation = {
       parseArgs.text = ''
         WORK_DIR="$PWD"
         runner_args=()
@@ -127,6 +127,6 @@ in {
         '';
       };
     };
-    launch.path = with pkgs; [ coreutils ];
+    launchScript.path = with pkgs; [ coreutils ];
   };
 }
