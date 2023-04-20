@@ -12,7 +12,7 @@ Inspired by [this thread](https://discourse.nixos.org/t/minecraft-launcher-in-pu
 $ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.client
 ```
 
-You will be asked to login before launch the game.
+You will be asked to login before launching the game.
 Only MSA login is supported, since Microsoft has started to migrate all Mojang accounts to Microsoft accounts.
 
 ## Run Server
@@ -28,6 +28,7 @@ You may use the `withConfig` function to add extra configurations to the game:
 ```sh
 {
   description = "A simple modpack.";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.minecraft = {
     url = "github:Ninlives/minecraft.nix";
     inputs.metadata.follows = "minecraft-metadata";
@@ -35,12 +36,15 @@ You may use the `withConfig` function to add extra configurations to the game:
   inputs.minecraft-metadata.url = "github:Ninlives/minecraft.json";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, minecraft, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system: {
+  outputs = { self, nixpkgs, minecraft, flake-utils, ... }:
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+      inherit (pkgs) fetchurl;
+    in {
       packages.minecraft-with-ae2 =
         (minecraft.legacyPackages.${system}.v1_18_1.fabric.client.withConfig [{
           mods = [
-            (builtins.fetchurl {
+            (fetchurl {
               # file name must have a ".jar" suffix to be loaded by fabric
               name = "fabric-api.jar";
               url =
@@ -48,7 +52,7 @@ You may use the `withConfig` function to add extra configurations to the game:
               sha256 =
                 "sha256:0d6dw9lsryy51by9iypcg2mk1p1ixf0bd3dblfgmv6nx8g98whlh";
             })
-            (builtins.fetchurl {
+            (fetchurl {
               url =
                 "https://media.forgecdn.net/files/3609/46/appliedenergistics2-10.0.0.jar";
               sha256 =
@@ -58,7 +62,7 @@ You may use the `withConfig` function to add extra configurations to the game:
           # withConfig is also composable
         }]).withConfig {
           resourcePacks = [
-            (builtins.fetchurl {
+            (fetchurl {
               url =
                 "https://media.forgecdn.net/files/3577/971/Bare+Bones+1.18.zip";
               sha256 =
