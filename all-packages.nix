@@ -1,4 +1,5 @@
-{ pkgs ? import <nixpkgs> { }, lib ? pkgs.lib, authClientID, metadata, OS ? "linux" }:
+{ pkgs ? import <nixpkgs> { }, lib ? pkgs.lib, authClientID, metadata
+, OS ? "linux" }:
 with lib;
 let
   extendedLib = lib.extend (import ./common.nix { inherit pkgs lib metadata; });

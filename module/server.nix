@@ -12,25 +12,9 @@ let
       && hasSuffix ".jar" (toString x);
     merge = mergeEqualOption;
   };
-
-  launchScript = let
-  in writeShellScriptBin "minecraft-server" ''
-    exec ${jre}/bin/java \
-      -cp '${concatStringsSep ":" config.libraries.java}' \
-      ${
-        optionalString (config.mods != [ ])
-        "-Dfabric.addMods='${concatStringsSep ":" config.mods}'"
-      } \
-      ${
-        if config.mainClass != null then
-          "${config.mainClass}"
-        else
-          "-jar '${config.mainJar}'"
-      } \
-      "$@"
-  '';
-
 in {
+  imports = [ ./common/launch-script.nix ./common/files.nix ];
+
   options = {
     # Interface
     mods = mkOption {
@@ -66,5 +50,23 @@ in {
     };
   };
 
-  config = { launcher = launchScript; };
+  config = {
+    launchScript.gameExecution = ''
+      exec ${jre}/bin/java \
+        -cp '${concatStringsSep ":" config.libraries.java}' \
+        ${
+          optionalString (config.mods != [ ])
+          "-Dfabric.addMods='${concatStringsSep ":" config.mods}'"
+        } \
+        ${
+          if config.mainClass != null then
+            "${config.mainClass}"
+          else
+            "-jar '${config.mainJar}'"
+        } \
+        "''${runner_args[@]}"
+    '';
+    launcher =
+      writeShellScriptBin "minecraft-server" config.launchScript.finalText;
+  };
 }
