@@ -92,7 +92,7 @@ in {
         parseRunnerArgs = {
           deps = [ "parseArgs" ];
           text = ''
-            XDG_DATA_HOME="''${XDG_DATA_HOME:-~/.local/share}"
+            XDG_DATA_HOME="''${XDG_DATA_HOME:-$HOME/.local/share}"
             PROFILE="$XDG_DATA_HOME/minecraft.nix/profile.json"
 
             mcargs=()
@@ -137,7 +137,7 @@ in {
       };
       gameExecution = let libPath = makeLibraryPath config.libraries.preload;
       in ''
-        export LD_LIBRARY_PATH=${libPath}''${LD_LIBRARY_PATH:+':'}$LD_LIBRARY_PATH
+        export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
         exec ${jre}/bin/java \
           -Djava.library.path='${
             concatMapStringsSep ":" (native: "${native}/lib")
