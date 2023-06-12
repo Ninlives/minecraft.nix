@@ -1,11 +1,12 @@
 { config, lib, pkgs, ... }:
 let
+  inherit (lib) mkIf versionAtLeast;
   inherit (lib.types) mkOptionType listOf path package singleLineStr bool;
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings)
     isCoercibleToString hasSuffix makeLibraryPath concatStringsSep
     concatMapStringsSep optionalString;
-  inherit (pkgs) writeShellScriptBin jq jre linkFarmFromDrvs;
+  inherit (pkgs) writeShellScriptBin jq jre linkFarmFromDrvs xorg;
   inherit (pkgs.writers) writePython3;
   jarPath = mkOptionType {
     name = "jarFilePath";
@@ -135,6 +136,9 @@ in {
           '';
         };
       };
+      # Minecraft versions before 1.13 use LWJGL2 for graphics, which determines
+      # the existing graphics modes by parsing the output of the "xrandr" command.
+      path = mkIf (!(versionAtLeast config.version "1.13")) [ xorg.xrandr ];
       gameExecution = let libPath = makeLibraryPath config.libraries.preload;
       in ''
         export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
