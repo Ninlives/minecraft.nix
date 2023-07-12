@@ -39,11 +39,18 @@ let
           Path to target file or directory.
         '';
       };
+      contents = mkOption {
+        type = bool;
+        default = false;
+        description = ''
+          Whether to link contents of the directory instead of linking the whole directory.
+        '';
+      };
       recursive = mkOption {
         type = bool;
         default = false;
         description = ''
-          Whether to link contents of the directory recursively instead of linking the whole directory.
+          Whether to link contents of the directory *recursively* instead of linking the whole directory.
         '';
       };
     };
@@ -52,25 +59,10 @@ let
     };
   };
   enabledFiles = filterAttrs (name: cfg: cfg.enable) config.files;
-  link = f:
-    if f.recursive then ''
-      mkdir -p "${f.target}"
-      lndir -silent "${f.source}" "${f.target}"
-    '' else ''
-      if [[ -e "${f.target}" ]]; then
-        echo "Not linking ${f.name} because a file with same name already exists at ${f.target}."
-        false # trigger error
-      else
-        mkdir -p $(dirname "${f.target}")
-        ln -s "${f.source}" "${f.target}"
-      fi
-    '';
-  checkAndLink = f: ''
-    if [[ -L "${f.target}" ]] && [[ "$(realpath "${f.target}")" =~ ^${builtins.storeDir}/* ]]; then
-      rm "${f.target}"
-    fi
-    ${link f}
-  '';
+
+  # always convert boolean to non-empty string because we enabled the 'u' flag of bash
+  # -u (treat unset variables as an error when substituting)
+  boolToString = b: if b then "true" else "false";
 in {
   options = {
     files = mkOption {
@@ -82,7 +74,43 @@ in {
   config = {
     launchScript.preparation.linkFiles = {
       text = ''
-        ${concatMapStringsSep "\n" checkAndLink (attrValues enabledFiles)}
+        function checkAndLink {
+          name=$1
+          source=$2
+          target=$3
+          recursive=$4
+          if [[ -L "$target" ]] && [[ "$(realpath "$target")" =~ ^${builtins.storeDir}/* ]]; then
+            rm "$target"
+          fi
+          if [[ "$recursive" = "true" ]]; then
+            mkdir -p "$target"
+            lndir -silent "$source" "$target"
+          else
+            if [[ -e "$target" ]]; then
+              echo "Not linking '$name' because a file with same name already exists at '$target'."
+              false # trigger error
+            else
+              mkdir -p $(dirname "$target")
+              ln -s "$source" "$target"
+            fi
+          fi
+        }
+
+        ${concatMapStringsSep "\n" (f:
+          if f.contents then ''
+            recursive="${boolToString f.recursive}"
+            for path in "${f.source}"/*; do
+              filename=$(basename "$path")
+              name="${f.name}/$filename"
+              source="$path"
+              target="${f.target}/$filename"
+              checkAndLink "$name" "$source" "$target" "$recursive"
+            done
+          '' else ''
+            checkAndLink "${f.name}" "${f.source}" "${f.target}" "$recursive"
+          '') (attrValues enabledFiles)}
+
+        unset -f checkAndLink
       '';
       deps = [ "enterWorkingDirectory" ];
     };
