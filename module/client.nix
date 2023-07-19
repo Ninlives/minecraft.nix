@@ -78,7 +78,8 @@ in {
   };
 
   config = {
-    files."assets".source = config.assets.directory;
+    files."assets/indexes".source = "${config.assets.directory}/indexes";
+    files."assets/objects".source = "${config.assets.directory}/objects";
     files."resourcepacks" = {
       source = linkFarmFromDrvs "resourcepacks" config.resourcePacks;
       recursive = !config.declarative;
