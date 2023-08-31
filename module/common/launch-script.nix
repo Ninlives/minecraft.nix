@@ -111,13 +111,17 @@ in {
         runner_args=()
 
         while [[ "$#" -gt 0 ]];do
-          runner_args+=("$1")
-          if [[ "$1" == "--gameDir" ]];then
-            shift 1
-            runner_args+=("$1")
-            WORK_DIR="$1"
-          fi
-          shift 1
+          case "$1" in
+            --gameDir)
+              shift
+              WORK_DIR="$1"
+              shift
+              ;;
+            *)
+              runner_args+=("$1")
+              shift
+              ;;
+          esac
         done
       '';
       enterWorkingDirectory = {
