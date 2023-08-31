@@ -4,7 +4,7 @@ let
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings)
     isCoercibleToString hasSuffix concatStringsSep optionalString;
-  inherit (pkgs) writeShellScriptBin jre;
+  inherit (pkgs) writeShellScriptBin;
   jarPath = mkOptionType {
     name = "jarFilePath";
     check = x:
@@ -13,7 +13,12 @@ let
     merge = mergeEqualOption;
   };
 in {
-  imports = [ ./common/launch-script.nix ./common/files.nix ];
+  imports = [
+    ./common/version.nix
+    ./common/java.nix
+    ./common/launch-script.nix
+    ./common/files.nix
+  ];
 
   options = {
     # Interface
@@ -52,7 +57,7 @@ in {
 
   config = {
     launchScript.gameExecution = ''
-      exec ${jre}/bin/java \
+      exec "${config.java}" \
         -cp '${concatStringsSep ":" config.libraries.java}' \
         ${
           optionalString (config.mods != [ ])

@@ -1,11 +1,8 @@
 { pkgs, lib, authClientID, OS }:
 with lib;
 let
-  inherit (pkgs)
-    fetchurl libpulseaudio libGL flite alsa-lib unzip writeShellScript jq jre
-    runCommand;
+  inherit (pkgs) fetchurl libpulseaudio libGL flite alsa-lib unzip runCommand;
   inherit (pkgs.xorg) libXcursor libXrandr libXxf86vm;
-  inherit (pkgs.writers) writePython3;
 
   preloadLibraries = [
     libpulseaudio

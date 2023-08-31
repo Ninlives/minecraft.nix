@@ -6,7 +6,7 @@ let
   inherit (lib.strings)
     isCoercibleToString hasSuffix makeLibraryPath concatStringsSep
     concatMapStringsSep optionalString;
-  inherit (pkgs) writeShellScriptBin jq jre linkFarmFromDrvs xorg;
+  inherit (pkgs) writeShellScriptBin jq linkFarmFromDrvs xorg;
   inherit (pkgs.writers) writePython3;
   jarPath = mkOptionType {
     name = "jarFilePath";
@@ -22,7 +22,12 @@ let
       readOnly = true;
     };
 in {
-  imports = [ ./common/launch-script.nix ./common/files.nix ];
+  imports = [
+    ./common/version.nix
+    ./common/java.nix
+    ./common/launch-script.nix
+    ./common/files.nix
+  ];
 
   options = {
     # Interface
@@ -74,7 +79,6 @@ in {
     assets.index = mkInternalOption singleLineStr;
 
     mainClass = mkInternalOption singleLineStr;
-    version = mkInternalOption singleLineStr;
   };
 
   config = {
@@ -143,7 +147,7 @@ in {
       gameExecution = let libPath = makeLibraryPath config.libraries.preload;
       in ''
         export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
-        exec ${jre}/bin/java \
+        exec "${config.java}" \
           -Djava.library.path='${
             concatMapStringsSep ":" (native: "${native}/lib")
             config.libraries.native
