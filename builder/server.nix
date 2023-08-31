@@ -8,6 +8,7 @@ let
   buildVanillaModules = versionInfo: assetsIndex:
     let server = fetchurl { inherit (versionInfo.downloads.server) url sha1; };
     in [{
+      version = versionInfo.id;
       mainJar = server;
       libraries.java = [ server ];
     }];
