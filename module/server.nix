@@ -2,13 +2,12 @@
 let
   inherit (lib.types) mkOptionType listOf package singleLineStr bool nullOr;
   inherit (lib.options) mergeEqualOption mkOption;
-  inherit (lib.strings)
-    isCoercibleToString hasSuffix concatStringsSep optionalString;
+  inherit (lib.strings) isStringLike hasSuffix concatStringsSep optionalString;
   inherit (pkgs) writeShellScriptBin;
   jarPath = mkOptionType {
     name = "jarFilePath";
     check = x:
-      isCoercibleToString x && builtins.substring 0 1 (toString x) == "/"
+      isStringLike x && builtins.substring 0 1 (toString x) == "/"
       && hasSuffix ".jar" (toString x);
     merge = mergeEqualOption;
   };

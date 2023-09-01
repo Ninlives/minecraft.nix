@@ -4,14 +4,14 @@ let
   inherit (lib.types) mkOptionType listOf path package singleLineStr bool;
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings)
-    isCoercibleToString hasSuffix makeLibraryPath concatStringsSep
-    concatMapStringsSep optionalString;
+    isStringLike hasSuffix makeLibraryPath concatStringsSep concatMapStringsSep
+    optionalString;
   inherit (pkgs) writeShellScriptBin jq linkFarmFromDrvs xorg;
   inherit (pkgs.writers) writePython3;
   jarPath = mkOptionType {
     name = "jarFilePath";
     check = x:
-      isCoercibleToString x && builtins.substring 0 1 (toString x) == "/"
+      isStringLike x && builtins.substring 0 1 (toString x) == "/"
       && hasSuffix ".jar" (toString x);
     merge = mergeEqualOption;
   };
