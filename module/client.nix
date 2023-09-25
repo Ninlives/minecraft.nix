@@ -89,7 +89,7 @@ in {
       recursive = !config.declarative;
     };
     files."shaderpacks" = {
-      source = linkFarmFromDrvs "shaderpacks" config.resourcePacks;
+      source = linkFarmFromDrvs "shaderpacks" config.shaderPacks;
       recursive = !config.declarative;
     };
 
