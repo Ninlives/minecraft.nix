@@ -102,17 +102,20 @@ in {
             PROFILE="$XDG_DATA_HOME/minecraft.nix/profile.json"
 
             mcargs=()
-            while [[ "$#" -gt 0 ]];do
-              if [[ "$1" == "--launch-profile" ]];then
-                shift 1
-                if [[ "$#" -gt 0 ]];then
-                  PROFILE="$1"
+            function parse_runner_args() {
+              while [[ "$#" -gt 0 ]];do
+                if [[ "$1" == "--launch-profile" ]];then
+                  shift 1
+                  if [[ "$#" -gt 0 ]];then
+                    PROFILE="$1"
+                  fi
+                else
+                  mcargs+=("$1")
                 fi
-              else
-                mcargs+=("$1")
-              fi
-              shift 1
-            done
+                shift 1
+              done
+            }
+            parse_runner_args "''${runner_args[@]}"
           '';
         };
         auth = let
