@@ -1,4 +1,7 @@
 { pkgs, lib, metadata }:
+let
+  inherit (lib) warn getExe;
+in
 self: super:
 with self; {
 
@@ -51,4 +54,18 @@ with self; {
       inherit baseModulePath buildFabricModules buildVanillaModules versionInfo
         assetsIndex fabricProfile;
     };
+
+  defaultJavaVersion = versionInfo:
+    let
+      javaMajorVersion = versionInfo.javaVersion.majorVersion or null;
+      fallback = warn ''
+        Java version is not specified by the Minecraft json file, or
+        the specified version of OpenJDK is not supported by the Nixpkgs.
+        Fallback to '${pkgs.openjdk}'.
+      '' pkgs.openjdk;
+      java = if javaMajorVersion == null
+        then fallback
+        else pkgs."openjdk${toString javaMajorVersion}" or fallback;
+    in
+      getExe java;
 }

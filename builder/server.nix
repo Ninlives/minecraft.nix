@@ -9,6 +9,7 @@ let
     let server = fetchurl { inherit (versionInfo.downloads.server) url sha1; };
     in [{
       version = versionInfo.id;
+      java = mkDefault (defaultJavaVersion versionInfo);
       mainJar = server;
       libraries.java = [ server ];
     }];
