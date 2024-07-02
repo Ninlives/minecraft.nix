@@ -4,8 +4,8 @@ let
   cfg = config.launchScript;
   inherit (lib)
     mkOption attrNames mapAttrs textClosureMap id getBin isString
-    concatMapStringsSep;
-  inherit (lib.types) attrsOf listOf str lines submodule oneOf package;
+    concatMapStringsSep optionalString;
+  inherit (lib.types) attrsOf listOf str lines submodule oneOf package bool;
   scriptOptions = {
     options = {
       deps = mkOption {
@@ -51,7 +51,7 @@ let
       _status=0
       trap "_status=1 _localstatus=\$?" ERR
 
-      export PATH=""
+      ${optionalString (!cfg.inheritPath) "export PATH="}
       ${concatMapStringsSep "\n" (p: ''export PATH="${mkPath p}:$PATH"'')
       cfg.path}
 
@@ -83,6 +83,13 @@ in {
           Script to execute the game. Typically `exec java ...`.
 
           If errors happened in launch scripts, this script will not be run.
+        '';
+      };
+      inheritPath = mkOption {
+        type = bool;
+        default = false;
+        description = ''
+          Whether to inherit the PATH environment variable from parent process.
         '';
       };
       path = mkOption {
