@@ -68,6 +68,7 @@ let
     in {
       inherit authClientID;
       version = versionInfo.id;
+      java = mkDefault (defaultJavaVersion versionInfo);
       libraries.java = buildVanillaLibraries artifacts ++ [ client ];
       libraries.native = buildNativeLibraries artifacts;
       libraries.preload = preloadLibraries;
