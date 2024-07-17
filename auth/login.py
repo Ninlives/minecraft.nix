@@ -59,7 +59,7 @@ def authenticate(profile_path):
             error(f"{profile_path} seems to be corrupted, try to login again.")
         else:
             mc_token = profile['mc_token']
-            if mc_token.not_after < datetime.now(datetime.UTC):
+            if mc_token.not_after < datetime.utcnow():
                 refresh(profile)
                 with open(profile_path, 'w+') as f:
                     json.dump(profile, f, default=custom_encode)

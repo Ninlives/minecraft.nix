@@ -106,14 +106,14 @@ def get_ms_token() -> (Token, Token):
 
         sleep(interval)
 
-    access_token = Token(response['access_token'], datetime.now(datetime.UTC) + timedelta(seconds=int(response['expires_in'])))
+    access_token = Token(response['access_token'], datetime.utcnow() + timedelta(seconds=int(response['expires_in'])))
     refresh_token = Token(response['refresh_token'], datetime.min)
     return (access_token, refresh_token)
 
 
 def refresh_ms_token(refresh_token: Token) -> (Token, Token):
     response = post(MS_TOKEN_URL, data={'client_id': CLIENT_ID, 'refresh_token': refresh_token.value, 'grant_type': 'refresh_token'}).json()
-    access_token = Token(response['access_token'], datetime.now(datetime.UTC) + timedelta(seconds=int(response['expires_in'])))
+    access_token = Token(response['access_token'], datetime.utcnow() + timedelta(seconds=int(response['expires_in'])))
     refresh_token = Token(response['refresh_token'], datetime.min)
     return (access_token, refresh_token)
 
@@ -183,7 +183,7 @@ def get_mc_token(xsts_token: Token, user_hash: str) -> Token:
         "platform": "PC_LAUNCHER"
     }).json()
 
-    return Token(response['access_token'], datetime.now(datetime.UTC) + timedelta(seconds=int(response['expires_in'])))
+    return Token(response['access_token'], datetime.utcnow() + timedelta(seconds=int(response['expires_in'])))
 
 
 def check_ownership(mc_token: Token):
@@ -200,3 +200,4 @@ def check_ownership(mc_token: Token):
 
 def get_profile(mc_token: Token) -> Dict[str, str]:
     return get(PROFILE_URL, headers={'Authorization': f"Bearer {mc_token}"}).json()
+
