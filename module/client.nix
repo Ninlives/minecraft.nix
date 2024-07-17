@@ -130,7 +130,6 @@ in {
           } ''
             ${builtins.replaceStrings [ "@CLIENT_ID@" ] [ config.authClientID ]
             (builtins.readFile ../auth/msa.py)}
-
             ${builtins.readFile ../auth/login.py}
           '';
         in {
