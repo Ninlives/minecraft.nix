@@ -46,7 +46,7 @@ def custom_encode(obj):
 
 def custom_decode(dct):
     if '__type' in dct and dct['__type'] == 'Token':
-        return Token(dct['__value'], datetime.fromisoformat(dct['__not_after']))
+        return Token(dct['__value'], datetime.fromisoformat(dct['__not_after']).replace(tzinfo=UTC))
     return dct
 
 
@@ -59,7 +59,7 @@ def authenticate(profile_path):
             error(f"{profile_path} seems to be corrupted, try to login again.")
         else:
             mc_token = profile['mc_token']
-            if mc_token.not_after < datetime.now(datetime.UTC):
+            if mc_token.not_after < datetime.now(UTC):
                 refresh(profile)
                 with open(profile_path, 'w+') as f:
                     json.dump(profile, f, default=custom_encode)
