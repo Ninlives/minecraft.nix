@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   inherit (lib) mkIf versionAtLeast;
-  inherit (lib.types) mkOptionType listOf path package singleLineStr bool;
+  inherit (lib.types) mkOptionType listOf path package singleLineStr bool str;
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings)
     isStringLike hasSuffix makeLibraryPath concatStringsSep concatMapStringsSep
@@ -61,6 +61,12 @@ in {
       description = "Whether using a declarative way to manage game files.";
       default = true;
     };
+    args = mkOption {
+      type = listOf str;
+      description = "List of extra arguments to pass to Java launcher";
+      default = [];
+    };
+
 
     # Internal
     libraries.java = mkOption {
@@ -168,7 +174,8 @@ in {
           --username "$USER_NAME" \
           --accessToken "$ACCESS_TOKEN" \
           --userType "msa" \
-          "''${mcargs[@]}"
+          "''${mcargs[@]}" \
+          ${builtins.concatStringsSep " " config.args}
       '';
     };
     launcher = writeShellScriptBin "minecraft" config.launchScript.finalText;
