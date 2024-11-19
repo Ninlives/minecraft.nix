@@ -36,12 +36,12 @@ in {
       description = "Whether using a declarative way to manage game files.";
       default = true;
     };
-    prefixArgs = mkOption {
+    jvmArgs = mkOption {
       type = listOf str;
       description = "List of extra arguments to pass (as prefix) to Java launcher";
       default = [];
     };
-    postfixArgs = mkOption {
+    appArgs = mkOption {
       type = listOf str;
       description = "List of extra arguments to pass (as postfix) to Java launcher";
       default = [];
@@ -68,7 +68,7 @@ in {
   config = {
     launchScript.gameExecution = ''
       exec "${config.java}" \
-        ${builtins.concatStringsSep " " config.prefixArgs} \
+        ${builtins.concatStringsSep " " config.jvmArgs} \
         -cp '${concatStringsSep ":" config.libraries.java}' \
         ${
           optionalString (config.mods != [ ])
@@ -81,7 +81,7 @@ in {
             "-jar '${config.mainJar}'"
         } \
         "''${runner_args[@]}" \
-        ${builtins.concatStringsSep " " config.postfixArgs}
+        ${builtins.concatStringsSep " " config.appArgs}
     '';
     launcher =
       writeShellScriptBin "minecraft-server" config.launchScript.finalText;

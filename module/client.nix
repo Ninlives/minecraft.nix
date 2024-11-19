@@ -61,12 +61,12 @@ in {
       description = "Whether using a declarative way to manage game files.";
       default = true;
     };
-    prefixArgs = mkOption {
+    jvmArgs = mkOption {
       type = listOf str;
       description = "List of extra arguments to pass (as prefix) to Java launcher";
       default = [];
     };
-    postfixArgs = mkOption {
+    appArgs = mkOption {
       type = listOf str;
       description = "List of extra arguments to pass (as postfix) to Java launcher";
       default = [];
@@ -163,7 +163,7 @@ in {
       in ''
         export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
         exec "${config.java}" \
-          ${builtins.concatStringsSep " " config.prefixArgs} \
+          ${builtins.concatStringsSep " " config.jvmArgs} \
           -Djava.library.path='${
             concatMapStringsSep ":" (native: "${native}/lib")
             config.libraries.native
@@ -181,7 +181,7 @@ in {
           --accessToken "$ACCESS_TOKEN" \
           --userType "msa" \
           "''${mcargs[@]}" \
-          ${builtins.concatStringsSep " " config.postfixArgs}
+          ${builtins.concatStringsSep " " config.appArgs}
       '';
     };
     launcher = writeShellScriptBin "minecraft" config.launchScript.finalText;
