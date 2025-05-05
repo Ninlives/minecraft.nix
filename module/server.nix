@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  inherit (lib.types) mkOptionType listOf package singleLineStr bool nullOr;
+  inherit (lib.types) mkOptionType listOf package singleLineStr bool nullOr str;
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings) isStringLike hasSuffix concatStringsSep optionalString;
   inherit (pkgs) writeShellScriptBin;
@@ -36,6 +36,17 @@ in {
       description = "Whether using a declarative way to manage game files.";
       default = true;
     };
+    jvmArgs = mkOption {
+      type = listOf str;
+      description = "List of extra arguments to pass (as prefix) to Java launcher";
+      default = [];
+    };
+    appArgs = mkOption {
+      type = listOf str;
+      description = "List of extra arguments to pass (as postfix) to Java launcher";
+      default = [];
+    };
+
 
     # Internal
     libraries.java = mkOption {
@@ -57,6 +68,7 @@ in {
   config = {
     launchScript.gameExecution = ''
       exec "${config.java}" \
+        ${builtins.concatStringsSep " " config.jvmArgs} \
         -cp '${concatStringsSep ":" config.libraries.java}' \
         ${
           optionalString (config.mods != [ ])
@@ -68,7 +80,8 @@ in {
           else
             "-jar '${config.mainJar}'"
         } \
-        "''${runner_args[@]}"
+        "''${runner_args[@]}" \
+        ${builtins.concatStringsSep " " config.appArgs}
     '';
     launcher =
       writeShellScriptBin "minecraft-server" config.launchScript.finalText;
