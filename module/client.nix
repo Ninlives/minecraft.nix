@@ -51,6 +51,16 @@ in {
       type = singleLineStr;
       description = "The client id of the authentication application.";
     };
+    offlineMode = mkOption {
+      type = bool;
+      description = "Whether to run the game in offline mode.";
+      default = false;
+    };
+    offlineUsername = mkOption {
+      type = singleLineStr;
+      description = "Username to use in offline mode.";
+      default = "Player";
+    };
     launcher = mkOption {
       type = package;
       description = "The launcher of the game.";
@@ -136,18 +146,30 @@ in {
         in {
           deps = [ "parseRunnerArgs" ];
           text = let json = "${jq}/bin/jq --raw-output";
-          in ''
+          in if config.offlineMode then ''
+            # Offline mode: use provided username and generate a UUID
+            USER_NAME="${config.offlineUsername}"
+            # Generate a deterministic UUID based on the username
+            UUID=$(python3 -c 'import uuid; print(str(uuid.uuid3(uuid.NAMESPACE_DNS, "offline:${config.offlineUsername}")).replace("-", ""))')
+            ACCESS_TOKEN=""  # No access token in offline mode
+            echo "Running in offline mode as user: $USER_NAME"
+          '' else ''
             ${ensureAuth} --profile "$PROFILE"
 
             UUID=$(${json} '.["id"]' "$PROFILE")
             USER_NAME=$(${json} '.["name"]' "$PROFILE")
-            ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
+            # If profile is offline, ACCESS_TOKEN won't exist, so we provide empty string
+            if [[ -n "$(${json} '.["offline"]' "$PROFILE" 2>/dev/null)" ]]; then
+              ACCESS_TOKEN=""
+            else
+              ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
+            fi
           '';
         };
       };
       # Minecraft versions before 1.13 use LWJGL2 for graphics, which determines
       # the existing graphics modes by parsing the output of the "xrandr" command.
-      path = mkIf (!(versionAtLeast config.version "1.13")) [ xorg.xrandr ];
+      path = [ pkgs.python3 ] ++ lib.optional (!(versionAtLeast config.version "1.13")) xorg.xrandr;
       gameExecution = let libPath = makeLibraryPath config.libraries.preload;
       in ''
         export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
@@ -167,7 +189,7 @@ in {
           --uuid "$UUID" \
           --username "$USER_NAME" \
           --accessToken "$ACCESS_TOKEN" \
-          --userType "msa" \
+          --userType "${if config.offlineMode then "mojang" else "msa"}" \
           "''${mcargs[@]}"
       '';
     };
