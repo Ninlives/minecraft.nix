@@ -103,6 +103,9 @@ in {
       source = linkFarmFromDrvs "shaderpacks" config.shaderPacks;
       recursive = !config.declarative;
     };
+    files."allowed_symlinks.txt".text = ''
+      [prefix]/nix/store/
+    '';
 
     launchScript = {
       preparation = {
