@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   inherit (lib) mkIf versionAtLeast;
-  inherit (lib.types) mkOptionType listOf path package singleLineStr bool;
+  inherit (lib.types) mkOptionType listOf path package singleLineStr bool str;
   inherit (lib.options) mergeEqualOption mkOption;
   inherit (lib.strings)
     isStringLike hasSuffix makeLibraryPath concatStringsSep concatMapStringsSep
@@ -61,6 +61,17 @@ in {
       description = "Whether using a declarative way to manage game files.";
       default = true;
     };
+    jvmArgs = mkOption {
+      type = listOf str;
+      description = "List of extra arguments to pass (as prefix) to Java launcher";
+      default = [];
+    };
+    appArgs = mkOption {
+      type = listOf str;
+      description = "List of extra arguments to pass (as postfix) to Java launcher";
+      default = [];
+    };
+
 
     # Internal
     libraries.java = mkOption {
@@ -155,6 +166,7 @@ in {
       in ''
         export LD_LIBRARY_PATH="${libPath}''${LD_LIBRARY_PATH:+':'}''${LD_LIBRARY_PATH:-}"
         exec "${config.java}" \
+          ${builtins.concatStringsSep " " config.jvmArgs} \
           -Djava.library.path='${
             concatMapStringsSep ":" (native: "${native}/lib")
             config.libraries.native
@@ -171,7 +183,8 @@ in {
           --username "$USER_NAME" \
           --accessToken "$ACCESS_TOKEN" \
           --userType "msa" \
-          "''${mcargs[@]}"
+          "''${mcargs[@]}" \
+          ${builtins.concatStringsSep " " config.appArgs}
       '';
     };
     launcher = writeShellScriptBin "minecraft" config.launchScript.finalText;
