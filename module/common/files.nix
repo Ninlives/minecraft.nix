@@ -86,6 +86,6 @@ in {
       '';
       deps = [ "enterWorkingDirectory" ];
     };
-    launchScript.path = with pkgs; [ xorg.lndir ];
+    launchScript.path = with pkgs; [ lndir ];
   };
 }
